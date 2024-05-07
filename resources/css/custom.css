@@ -1,9 +1,12 @@
 :root {
+  --light-cream-color : #F9E8D9;
   --cream-color : #F7B787;
   --dark-cream-color : #EE7214;
   --black-color : #000;
+  --light-green-color: #9BD49C;
   --green-color: #527853;
   --white-color: #fff;
+  --orange-color: #FF3333;
 }
 
 
@@ -18,6 +21,9 @@
 /* CUSTOM STYLE */
 
 /* Color custom */
+.light-cream-color {
+  color: var(--light-cream-color);
+}
 .cream-color {
   color: var(--cream-color);
 }
@@ -27,14 +33,23 @@
 .black-color {
   color: var(--black-color);
 }
+.light-green-color {
+  color: var(--light-green-color);
+}
 .green-color {
   color: var(--green-color);
 }
 .white-color {
   color: var(--white-color);
 }
+.orange-color {
+  color: var(--orange-color);
+}
 
 /* Background custom */
+.light-cream-bg {
+  background-color: var(--light-cream-color);
+}
 .cream-bg {
   background-color: var(--cream-color);
 }
@@ -44,15 +59,24 @@
 .black-bg {
   background-color: var(--black-color);
 }
+.light-green-bg {
+  background-color: var(--light-green-color);
+}
 .green-bg {
   background-color: var(--green-color);
 }
 .white-bg {
   background-color: var(--white-color);
 }
+.orange-bg {
+  background-color: var(--orange-color);
+}
 
 
 /* Font Size custom */
+.fs-10{
+  font-size: 10px;
+}
 .fs-15{
   font-size: 15px;
 }
@@ -77,6 +101,15 @@
 .fs-50 {
   font-size: 50px;
 }
+.fs-55 {
+  font-size: 55px;
+}
+.fs-60 {
+  font-size: 60px;
+}
+.fs-65 {
+  font-size: 65px;
+}
 .fs-70 {
   font-size: 70px;
 }
@@ -91,6 +124,6 @@
   background-color: var(--dark-cream-color);
 }
 
-/* .btn-auth {
-  background-color: ;
-} */
+.discount {
+  background-color: rgba(255, 51, 51, 0.1);
+}

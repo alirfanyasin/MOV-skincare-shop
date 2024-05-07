@@ -11,6 +11,28 @@ body {
 }
 
 
+
+#skin-education {
+  background-image: url('/public/mov-assets/img-bg-education-skin.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#product-recommendations #tab {
+  background-image: url('/public/mov-assets/img-recommendation-product.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+#product-recommendations #tab .active {
+  color: var(--dark-cream-color);
+}
+
+
+
 .auth-section .col-md-8{
   height: 100vh;
 }
