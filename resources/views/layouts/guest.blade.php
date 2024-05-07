@@ -14,7 +14,7 @@
 
 <body>
 
-
+  @livewire('components.navbar')
 
   @yield('content')
 

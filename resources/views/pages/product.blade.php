@@ -1,4 +1,4 @@
 @extends('layouts.guest')
 @section('content')
-  @livewire('homepage.skintest')
+  @livewire('product.card-product')
 @endsection
