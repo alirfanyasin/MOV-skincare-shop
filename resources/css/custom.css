@@ -1,0 +1,96 @@
+:root {
+  --cream-color : #F7B787;
+  --dark-cream-color : #EE7214;
+  --black-color : #000;
+  --green-color: #527853;
+  --white-color: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* CUSTOM STYLE */
+
+/* Color custom */
+.cream-color {
+  color: var(--cream-color);
+}
+.dark-cream-color {
+  color: var(--dark-cream-color);
+}
+.black-color {
+  color: var(--black-color);
+}
+.green-color {
+  color: var(--green-color);
+}
+.white-color {
+  color: var(--white-color);
+}
+
+/* Background custom */
+.cream-bg {
+  background-color: var(--cream-color);
+}
+.dark-cream-bg {
+  background-color: var(--dark-cream-color);
+}
+.black-bg {
+  background-color: var(--black-color);
+}
+.green-bg {
+  background-color: var(--green-color);
+}
+.white-bg {
+  background-color: var(--white-color);
+}
+
+
+/* Font Size custom */
+.fs-15{
+  font-size: 15px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.fs-35 {
+  font-size: 35px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-45 {
+  font-size: 45px;
+}
+.fs-50 {
+  font-size: 50px;
+}
+.fs-70 {
+  font-size: 70px;
+}
+
+.fs-100 {
+  font-size: 100px;
+}
+
+
+/* Custom Component Style */
+.btn-skintest {
+  background-color: var(--dark-cream-color);
+}
+
+/* .btn-auth {
+  background-color: ;
+} */

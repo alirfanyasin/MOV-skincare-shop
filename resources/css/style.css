@@ -1,0 +1,59 @@
+:root {
+  --cream-color : #F7B787;
+  --dark-cream-color : #EE7214;
+  --black-color : #000;
+  --green-color: #527853;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+.auth-section .col-md-8{
+  height: 100vh;
+}
+
+.auth-section .form-control {
+  border: 2px solid var(--cream-color);
+  border-radius: 15px;
+}
+
+.auth-section .form-control:focus {
+  box-shadow: none;
+}
+.auth-section .form-control::placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+}
+
+
+/* Menambahkan border custom */
+input[type="checkbox"]:not(old) {
+  width: 20px; /* Sesuaikan ukuran dengan kebutuhan */
+  height: 20px; /* Sesuaikan ukuran dengan kebutuhan */
+  border: 2px solid #EE7214; /* Ganti warna dan ketebalan border sesuai keinginan */
+  border-radius: 4px; /* Mengatur sudut border */
+}
+
+/* Memberikan warna border ketika checkbox di-hover */
+input[type="checkbox"]:not(old):hover {
+  border-color: #666; /* Warna border saat hover */
+}
+
+/* Memberikan warna border ketika checkbox di-check */
+input[type="checkbox"]:not(old):checked {
+  border-color: #EE7214; /* Warna border saat checkbox di-check */
+}
+
+input[type="checkbox"]:not(old):checked {
+  background-color: #EE7214; /* Ganti warna background ketika checkbox di-check */
+}
+

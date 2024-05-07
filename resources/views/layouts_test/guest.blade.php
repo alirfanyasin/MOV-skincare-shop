@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', $lang ?? app()->getLocale()) }}">
 
 <head>
   <meta charset="utf-8">
@@ -9,7 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   {{-- Vite --}}
-  {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
