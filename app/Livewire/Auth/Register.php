@@ -9,7 +9,7 @@ use Livewire\Component;
 class Register extends Component
 {
     #[Title('Register')]
-    #[Layout('layouts.guest')]
+    #[Layout('layouts.auth')]
 
     public function render()
     {

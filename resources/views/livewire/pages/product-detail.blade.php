@@ -148,6 +148,15 @@
         </div>
       </div>
     </div>
+
+    <div class="row mt-5">
+      <div class="col d-flex justify-content-center">
+        <a href="" wire:navigate
+          class="text-decoration-none text-dark shadow white-bg py-2 px-5 d-flex align-items-center  rounded-pill fw-semibold">Lebih
+          banyak <iconify-icon icon="iconamoon:arrow-down-2-bold" class="ms-2"></iconify-icon></a>
+      </div>
+    </div>
+
   </div>
 
 </div>

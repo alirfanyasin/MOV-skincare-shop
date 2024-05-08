@@ -9,7 +9,7 @@ use Livewire\Component;
 class Login extends Component
 {
     #[Title('Login')]
-    #[Layout('layouts.guest')]
+    #[Layout('layouts.auth')]
 
     public function render()
     {
