@@ -34,7 +34,24 @@
   @livewire('components.navbar')
 
   <main>
-    {{ $slot }}
+    <div id="product-layout">
+      <div class="row">
+        {{-- Left --}}
+        <div class="col-3 position-relative">
+          @livewire('components.sidebar')
+        </div>
+
+        {{-- Right --}}
+        <div class="col-9 position-relative vh-100 overflow-y-scroll">
+          <div class="container">
+            {{ $slot }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </main>
 
 

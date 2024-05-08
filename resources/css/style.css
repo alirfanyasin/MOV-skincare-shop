@@ -80,3 +80,20 @@ input[type="checkbox"]:not(old):checked {
   background-color: #EE7214; /* Ganti warna background ketika checkbox di-check */
 }
 
+
+#product-layout .row .col-9 {
+  padding-top: 100px;
+}
+
+/* Sidebar */
+aside {
+  /* width: 300px; */
+  padding-top: 100px;
+  border-right: 2px solid var(--cream-color);
+}
+
+aside ul li {
+  padding: 20px;
+  /* background-color: #666; */
+}
+

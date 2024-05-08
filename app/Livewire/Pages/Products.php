@@ -11,7 +11,7 @@ use Livewire\Component;
 class Products extends Component
 {
     #[Title('Products')]
-    #[Layout('layouts.guest')]
+    #[Layout('layouts.product-layout')]
 
     public function render(): View|Closure|string
     {
