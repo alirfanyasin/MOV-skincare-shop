@@ -125,6 +125,10 @@
   font-size: 100px;
 }
 
+.col-1 {
+  width: 40px;
+}
+
 
 /* Custom Component Style */
 .btn-skintest {

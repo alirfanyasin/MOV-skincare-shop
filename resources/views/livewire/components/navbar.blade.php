@@ -20,8 +20,7 @@
           <button class="btn-skintest text-white rounded-pill border-0 fw-semibold py-2 px-5 outline-0">Ambil Skin
             Test</button>
         </a>
-        <a class="nav-link" href="/product" wire:navigate><iconify-icon icon="bx:cart"
-            class="fs-3"></iconify-icon></a>
+        <a class="nav-link" href="/cart" wire:navigate><iconify-icon icon="bx:cart" class="fs-3"></iconify-icon></a>
         <a class="nav-link" href="#"><iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon></a>
       </div>
     </div>
