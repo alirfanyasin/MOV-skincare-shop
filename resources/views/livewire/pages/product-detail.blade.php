@@ -30,7 +30,14 @@
         <p class="text-secondary my-3">Tersisah 732 produk</p>
       </div>
 
-      <div class="mt-5">
+      <div class="d-flex mt-4">
+        <button
+          class=" cream-border px-3 mb-3 cream-color text-center rounded-2 fw-bold bg-transparent">&minus;</button>
+        <h5 class="mx-3">1</h5>
+        <button class=" cream-border px-3 mb-3 cream-color text-center rounded-2 fw-bold bg-transparent">&plus;</button>
+      </div>
+
+      <div class="mt-3">
         <a href="" class="text-decoration-none py-3 me-2 px-5 text-dark cream-bg text-center rounded-2 fw-bold">
           + Keranjang</a>
         <a href=""
