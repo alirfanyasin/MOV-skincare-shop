@@ -4,6 +4,7 @@ use App\Http\Controllers\HomePage;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\Pages\Index;
+use App\Livewire\Pages\ProductDetail;
 use App\Livewire\Pages\Products;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Index::class);
 Route::get('/product', Products::class);
+Route::get('/product/detail', ProductDetail::class);
 
 Route::get('/register', Register::class);
 Route::get('/login', Login::class);

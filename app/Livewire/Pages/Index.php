@@ -9,7 +9,7 @@ use Livewire\Component;
 class Index extends Component
 {
     #[Title('Landing Page')]
-    #[Layout('layouts.guest')]
+    #[Layout('layouts.app')]
 
     public function render()
     {

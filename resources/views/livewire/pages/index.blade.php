@@ -57,5 +57,5 @@
 
 
   @livewire('sections.testimonial')
-  @livewire('components.footer')
+
 </div>
