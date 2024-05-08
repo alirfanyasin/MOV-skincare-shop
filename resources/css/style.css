@@ -11,7 +11,6 @@ body {
 }
 
 
-
 #skin-education {
   background-image: url('/public/mov-assets/img-bg-education-skin.png');
   background-repeat: no-repeat;
@@ -30,6 +29,8 @@ body {
 #product-recommendations #tab .active {
   color: var(--dark-cream-color);
 }
+
+
 
 
 
