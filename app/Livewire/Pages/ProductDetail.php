@@ -6,13 +6,13 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Index extends Component
+class ProductDetail extends Component
 {
-    #[Title('Landing Page')]
-    #[Layout('layouts.app')]
+    #[Title('Detail Product')]
+    #[Layout('layouts.product-layout')]
 
     public function render()
     {
-        return view('livewire.pages.index');
+        return view('livewire.pages.product-detail');
     }
 }

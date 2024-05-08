@@ -73,6 +73,13 @@
 }
 
 
+/* Border custom */
+.cream-border {
+  border: 1px solid var(--cream-color);
+}
+
+
+
 /* Font Size custom */
 .fs-10{
   font-size: 10px;
