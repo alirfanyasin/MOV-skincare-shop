@@ -5,6 +5,7 @@
   --black-color : #000;
   --light-green-color: #9BD49C;
   --green-color: #527853;
+  /* --green-color: #527853; */
   --white-color: #fff;
   --orange-color: #FF3333;
 }
@@ -64,6 +65,9 @@
 }
 .green-bg {
   background-color: var(--green-color);
+}
+.op-green-bg {
+  background-color: rgba(82, 120, 83, 0.25);
 }
 .white-bg {
   background-color: var(--white-color);

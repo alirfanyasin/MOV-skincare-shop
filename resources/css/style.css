@@ -85,6 +85,17 @@ input[type="checkbox"]:not(old):checked {
   padding-top: 100px;
 }
 
+#msg-cart input{
+  width: 250px;
+}
+
+#msg-cart input::placeholder {
+  text-align: end;
+}
+
+#msg-cart input:focus {
+  outline: none;
+}
 
 /* Sidebar */
 aside {
