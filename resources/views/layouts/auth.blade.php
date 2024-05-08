@@ -34,10 +34,39 @@
   @livewire('components.navbar')
 
   <main>
-    {{ $slot }}
+
+
+
+    <section class="auth-section vh-100">
+      <div class="row">
+        <div class="col-md-7 d-flex align-items-center cream-bg pt-5 vh-100">
+          <div class="container ">
+            <div class="row d-flex justify-content-end">
+              <div class="col-md-11">
+                <img src="/mov-assets/logo/logo-white.png" alt="second logo">
+                <div class="mt-5 position-relative">
+                  <h1 class="fw-bold green-color fs-70">Jadilah Versi <sup><img src="/mov-assets/shape/star-cream.png"
+                        alt=""></sup> <br> Terbaik dari Diri <br> <span class="position-absolute"
+                      style="bottom: -50px; left: -50px"><img src="/mov-assets/shape/star-cream.png" width="50px"
+                        alt=""></span>
+                    Kamu</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 vh-100 d-flex align-items-center">
+          <div class="row d-flex justify-content-center align-items-center pt-5 w-100">
+            <div class="col-md-9">
+              {{ $slot }}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  @livewire('components.footer')
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
