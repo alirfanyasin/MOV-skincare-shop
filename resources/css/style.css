@@ -81,8 +81,20 @@ input[type="checkbox"]:not(old):checked {
 }
 
 
-#product-layout .row .col-9 {
+#product-layout .row .col-9,#cart-page {
   padding-top: 100px;
+}
+
+#msg-cart input{
+  width: 250px;
+}
+
+#msg-cart input::placeholder {
+  text-align: end;
+}
+
+#msg-cart input:focus {
+  outline: none;
 }
 
 /* Sidebar */
