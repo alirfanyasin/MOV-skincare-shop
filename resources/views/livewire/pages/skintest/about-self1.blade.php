@@ -7,7 +7,7 @@
       <div class="col-md-5 text-center">
         <div class="d-flex justify-content-center">
           <div>
-            <input type="text" class="form-control mb-4 skintest-name mx-auto">
+            <input type="text" class="form-control mb-4 skintest-name mx-auto" autofocus autocomplete="false">
             <p>Dapatkan analisis kulit dan rekomendasi produk hanya dengan menjawab beberapa pertanyaan tentang
               dirimu,
               gaya
