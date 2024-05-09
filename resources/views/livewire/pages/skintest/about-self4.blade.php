@@ -1,6 +1,6 @@
 <div class="container">
   <div class="question text-center mt-5 mb-3">
-    <h1 class="fw-bold">Apa jenis kelaminmu?</h1>
+    <h1 class="fw-bold">Seperti apa kondisi kulitmu akhir-akhir ini?</h1>
   </div>
   <form action="/skintest/gender" wire:submit.prevent>
     <div class="row d-flex justify-content-center">
