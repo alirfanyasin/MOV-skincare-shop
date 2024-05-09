@@ -9,6 +9,8 @@ use App\Livewire\Pages\ProductDetail;
 use App\Livewire\Pages\Products;
 use App\Livewire\Pages\SkinNews;
 use App\Livewire\Pages\Skintest\AboutSelf1;
+use App\Livewire\Pages\Skintest\AboutSelf10;
+use App\Livewire\Pages\Skintest\AboutSelf11;
 use App\Livewire\Pages\Skintest\AboutSelf2;
 use App\Livewire\Pages\Skintest\AboutSelf3;
 use App\Livewire\Pages\Skintest\AboutSelf4;
@@ -48,6 +50,8 @@ Route::get('/skintest/often-you-having-acne-problems', AboutSelf6::class);
 Route::get('/skintest/The-type-of-acne-that-appears', AboutSelf7::class);
 Route::get('/skintest/where-acne-often-grows', AboutSelf8::class);
 Route::get('/skintest/You-have-the-following-skin-conditions', AboutSelf9::class);
+Route::get('/skintest/Have-you-ever-experienced-an-allergic-reaction', AboutSelf10::class);
+Route::get('/skintest/How-often-do-you-use-retinol', AboutSelf11::class);
 
 
 

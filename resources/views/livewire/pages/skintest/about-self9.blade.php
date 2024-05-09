@@ -7,7 +7,8 @@
       <div class="col-md-8">
         <div class="row d-flex justify-content-between">
           <div class="col-md-3">
-            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/Have-you-ever-experienced-an-allergic-reaction" wire:navigate
+              class="d-blok text-decoration-none">
               <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body">
                   <img src="/mov-assets/img-1.png" alt="" class="rounded-5 shadow" width="100%">
@@ -16,7 +17,8 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/Have-you-ever-experienced-an-allergic-reaction" wire:navigate
+              class="d-blok text-decoration-none">
               <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body">
                   <img src="/mov-assets/img-2.png" alt="" class="rounded-5 shadow" width="100%">
@@ -25,7 +27,8 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/Have-you-ever-experienced-an-allergic-reaction" wire:navigate
+              class="d-blok text-decoration-none">
               <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body">
                   <img src="/mov-assets/img-3.png" alt="" class="rounded-5 shadow" width="100%">
@@ -34,7 +37,8 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/Have-you-ever-experienced-an-allergic-reaction" wire:navigate
+              class="d-blok text-decoration-none">
               <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body">
                   <img src="/mov-assets/img-4.png" alt="" class="rounded-5 shadow" width="100%">
