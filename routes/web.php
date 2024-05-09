@@ -7,6 +7,8 @@ use App\Livewire\Pages\Cart;
 use App\Livewire\Pages\Index;
 use App\Livewire\Pages\ProductDetail;
 use App\Livewire\Pages\Products;
+use App\Livewire\Pages\SkinNews;
+use App\Livewire\Pages\SkinType;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +26,8 @@ Route::get('/', Index::class);
 Route::get('/product', Products::class);
 Route::get('/product/detail', ProductDetail::class);
 Route::get('/cart', Cart::class);
+Route::get('/skin-type', SkinType::class);
+Route::get('/skin-news', SkinNews::class);
 
 Route::get('/register', Register::class);
 Route::get('/login', Login::class);
