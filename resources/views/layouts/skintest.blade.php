@@ -40,7 +40,7 @@
       <nav class="navbar py-3">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center w-100">
-            <a href="" class="text-decoration-none d-block text-dark fs-1"><iconify-icon
+            <a href="/" wire:navigate class="text-decoration-none d-block text-dark fs-1"><iconify-icon
                 icon="solar:arrow-left-outline"></iconify-icon></a>
             <img src="/mov-assets/logo/logo.png" alt="" width="100px" height="40px">
             <div></div>

@@ -10,6 +10,7 @@ use App\Livewire\Pages\Products;
 use App\Livewire\Pages\SkinNews;
 use App\Livewire\Pages\Skintest\AboutSelf1;
 use App\Livewire\Pages\Skintest\AboutSelf2;
+use App\Livewire\Pages\Skintest\AboutSelf3;
 use App\Livewire\Pages\SkinType;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +35,7 @@ Route::get('/skin-news', SkinNews::class);
 
 Route::get('/skintest/name', AboutSelf1::class);
 Route::get('/skintest/old', AboutSelf2::class);
+Route::get('/skintest/gender', AboutSelf3::class);
 
 
 
