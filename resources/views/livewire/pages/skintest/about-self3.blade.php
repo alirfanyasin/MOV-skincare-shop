@@ -7,7 +7,7 @@
       <div class="col-md-4">
         <div class="row">
           <div class="col-6">
-            <a href="" class="d-blok white-bg text-decoration-none">
+            <a href="/skintest/your-skin-condition-lately" wire:navigate class="d-blok white-bg text-decoration-none">
               <div class="card rounded-4 overflow-hidden border-0">
                 <div class="card-body">
                   <img src="/mov-assets/wanita.png" alt="" width="100%">
@@ -17,7 +17,7 @@
             </a>
           </div>
           <div class="col-6">
-            <a href="" class="d-blok white-bg text-decoration-none">
+            <a href="/skintest/your-skin-condition-lately" wire:navigate class="d-blok white-bg text-decoration-none">
               <div class="card rounded-4 overflow-hidden border-0">
                 <div class="card-body">
                   <img src="/mov-assets/pria.png" alt="" width="100%">

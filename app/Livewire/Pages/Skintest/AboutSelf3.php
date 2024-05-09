@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class AboutSelf3 extends Component
 {
-    #[Title('Skin Test - Jenis Kelamin')]
+    #[Title('Skin Test - Apa jenis kelaminmu?')]
     #[Layout('layouts.skintest')]
     public function render()
     {
