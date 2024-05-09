@@ -6,7 +6,7 @@
           <h1 class="text-uppercase fw-bold green-color fs-70">Skin Test</h1>
           <h2 class="my-5 fw-bold ">Cari tahu produk terbaik untuk kulitmu</h2>
           <h4>Ketahui komposisi dan produk yang tepat <br> untuk kondisi kulitmu!</h4>
-          <a href="" wire:navigate
+          <a href="/skintest/name" wire:navigate
             class="text-decoration-none d-inline-block text-white fs-3 fw-bold py-2 mt-3 rounded-pill px-5 dark-cream-bg text-uppercase ">Mulai</a>
         </div>
       </div>
