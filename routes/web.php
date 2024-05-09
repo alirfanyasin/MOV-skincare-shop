@@ -11,6 +11,10 @@ use App\Livewire\Pages\SkinNews;
 use App\Livewire\Pages\Skintest\AboutSelf1;
 use App\Livewire\Pages\Skintest\AboutSelf10;
 use App\Livewire\Pages\Skintest\AboutSelf11;
+use App\Livewire\Pages\Skintest\AboutSelf12;
+use App\Livewire\Pages\Skintest\AboutSelf13;
+use App\Livewire\Pages\Skintest\AboutSelf14;
+use App\Livewire\Pages\Skintest\AboutSelf15;
 use App\Livewire\Pages\Skintest\AboutSelf2;
 use App\Livewire\Pages\Skintest\AboutSelf3;
 use App\Livewire\Pages\Skintest\AboutSelf4;
@@ -52,6 +56,10 @@ Route::get('/skintest/where-acne-often-grows', AboutSelf8::class);
 Route::get('/skintest/You-have-the-following-skin-conditions', AboutSelf9::class);
 Route::get('/skintest/Have-you-ever-experienced-an-allergic-reaction', AboutSelf10::class);
 Route::get('/skintest/How-often-do-you-use-retinol', AboutSelf11::class);
+Route::get('/skintest/How-often-do-you-use-AHA-BHA-PHA', AboutSelf12::class);
+Route::get('/skintest/Do-you-use-products-or-creams-from-a-doctor', AboutSelf13::class);
+Route::get('/skintest/How-long-you-are-exposed-to-sunlight-each-day', AboutSelf14::class);
+Route::get('/skintest/What-time-do-you-usually-sleep', AboutSelf15::class);
 
 
 
