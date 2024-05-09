@@ -7,19 +7,19 @@
       <div class="col-md-6">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6 mb-4">
-            <a href="/skintest/gender" wire:naigate type="submit"
+            <a href="/skintest/gender" wire:navigate type="submit"
               class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">10
               - 18
               Tahun</a>
           </div>
           <div class="col-md-6 mb-4">
-            <a href="/skintest/gender" wire:naigate type="submit"
+            <a href="/skintest/gender" wire:navigate type="submit"
               class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">19
               - 25
               Tahun</a>
           </div>
           <div class="col-md-6 mb-4">
-            <a href="/skintest/gender" wire:naigate type="submit"
+            <a href="/skintest/gender" wire:navigate type="submit"
               class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">26
               - 45
               Tahun</a>
