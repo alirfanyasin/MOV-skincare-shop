@@ -7,7 +7,7 @@
       <div class="col-md-8">
         <div class="row d-flex justify-content-between">
           <div class="col-md-3">
-            <a href="/skintest/the-skin-condition-you-want" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
               <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body p-0">
                   <img src="/mov-assets/komedo.png" alt="" width="100%">
@@ -18,7 +18,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/the-skin-condition-you-want" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
               <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body p-0">
                   <img src="/mov-assets/postula.png" alt="" width="100%">
@@ -30,7 +30,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/the-skin-condition-you-want" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
               <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body p-0">
                   <img src="/mov-assets/nadula.png" alt="" width="100%">
@@ -42,7 +42,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/the-skin-condition-you-want" wire:navigate class="d-blok text-decoration-none">
+            <a href="/skintest/where-acne-often-grows" wire:navigate class="d-blok text-decoration-none">
               <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                 <div class="card-body p-0">
                   <img src="/mov-assets/kistik.png" alt="" width="100%">

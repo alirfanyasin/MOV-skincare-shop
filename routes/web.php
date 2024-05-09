@@ -15,6 +15,8 @@ use App\Livewire\Pages\Skintest\AboutSelf4;
 use App\Livewire\Pages\Skintest\AboutSelf5;
 use App\Livewire\Pages\Skintest\AboutSelf6;
 use App\Livewire\Pages\Skintest\AboutSelf7;
+use App\Livewire\Pages\Skintest\AboutSelf8;
+use App\Livewire\Pages\Skintest\AboutSelf9;
 use App\Livewire\Pages\SkinType;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +46,8 @@ Route::get('/skintest/your-skin-condition-lately', AboutSelf4::class);
 Route::get('/skintest/the-skin-condition-you-want', AboutSelf5::class);
 Route::get('/skintest/often-you-having-acne-problems', AboutSelf6::class);
 Route::get('/skintest/The-type-of-acne-that-appears', AboutSelf7::class);
+Route::get('/skintest/where-acne-often-grows', AboutSelf8::class);
+Route::get('/skintest/You-have-the-following-skin-conditions', AboutSelf9::class);
 
 
 
