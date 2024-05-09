@@ -34,9 +34,9 @@
 </head>
 
 <body>
-  <div style="" class="light-cream-bg vh-100">
+  <div style="" class="{{ Request::is('skintest/result') ? 'white-bg' : 'light-cream-bg' }} vh-100">
 
-    <div class="white-bg shadow">
+    <div class="white-bg {{ Request::is('skintest/result') ? 'white-bg' : '' }}">
       <nav class="navbar py-3">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center w-100">

@@ -7,7 +7,7 @@
       <div class="col-md-6">
         <div class="row d-flex justify-content-between">
           <div class="col-md-3">
-            <a href="/skintest/Do-you-use-products-or-creams-from-a-doctor" wire:navigate
+            <a href="/skintest/What-do-you-usually-take-when-you-travel" wire:navigate
               class="d-blok text-decoration-none">
               <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                 <div class="card-body p-4">
@@ -18,7 +18,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/Do-you-use-products-or-creams-from-a-doctor" wire:navigate
+            <a href="/skintest/What-do-you-usually-take-when-you-travel" wire:navigate
               class="d-blok text-decoration-none">
               <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                 <div class="card-body p-4">
@@ -29,7 +29,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/Do-you-use-products-or-creams-from-a-doctor" wire:navigate
+            <a href="/skintest/What-do-you-usually-take-when-you-travel" wire:navigate
               class="d-blok text-decoration-none">
               <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                 <div class="card-body p-4">
@@ -40,7 +40,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="/skintest/Do-you-use-products-or-creams-from-a-doctor" wire:navigate
+            <a href="/skintest/What-do-you-usually-take-when-you-travel" wire:navigate
               class="d-blok text-decoration-none">
               <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                 <div class="card-body p-4">
