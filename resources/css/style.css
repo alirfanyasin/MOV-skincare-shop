@@ -36,6 +36,10 @@ body {
 }
 
 
+.profile-dropdown::after {
+  display: none;
+}
+
 
 
 

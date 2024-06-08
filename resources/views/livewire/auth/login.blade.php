@@ -1,12 +1,29 @@
-<form action="" class="w-100">
+<form wire:submit.prevent='login' class="w-100">
+  @if (session()->has('failed'))
+    <div class="mb-4">
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ session('failed') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    </div>
+  @endif
   <div class="mb-4">
     <label for="" class="fw-semibold green-color mb-2">Email</label>
-    <input type="email" name="email" id="" class="form-control" placeholder="email@example.com">
+    <input type="email" name="email" id="" wire:model='email' class="form-control"
+      placeholder="email@example.com">
+    @error('email')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
   </div>
 
   <div class="mb-2">
     <label for="" class="fw-semibold green-color mb-2">Kata Sandi</label>
-    <input type="password" name="password" id="" class="form-control" placeholder="Tulis Kata Sandi">
+    <input type="password" name="password" id="" wire:model='password' class="form-control"
+      placeholder="Tulis Kata Sandi">
+    @error('password')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
   </div>
   <div class="mb-4">
     <div class="d-flex justify-content-end">

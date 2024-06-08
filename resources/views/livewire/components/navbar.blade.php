@@ -21,7 +21,18 @@
             Test</button>
         </a>
         <a class="nav-link" href="/cart" wire:navigate><iconify-icon icon="bx:cart" class="fs-3"></iconify-icon></a>
-        <a class="nav-link" href="#"><iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon></a>
+        <div class="btn-group nav-link">
+          <button type="button" class="bg-transparent profile-dropdown border-0 dropdown-toggle"
+            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            @auth
+              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+            @endauth
+          </ul>
+        </div>
       </div>
     </div>
   </div>
