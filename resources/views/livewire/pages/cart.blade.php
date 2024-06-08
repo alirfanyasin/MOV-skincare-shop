@@ -168,15 +168,15 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col d-flex justify-content-end">
-        <button class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2" data-bs-toggle="modal"
-          data-bs-target="#orderSuccessModal">Buat Pesanan</button>
+        <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2"
+          data-bs-toggle="modal" data-bs-target="#orderSuccessModal">Buat Pesanan</button>
       </div>
     </div>
   </div>
 
 
   <!-- Alert -->
-  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
+  {{-- <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content p-4">
@@ -187,5 +187,32 @@
 
       </div>
     </div>
-  </div>
+  </div> --}}
 </div>
+
+
+
+<!-- TODO: Remove ".sandbox" from script src URL for production environment. Also input your client key in "data-client-key" -->
+<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ env('MIDTRANS_CLIENT_KEY') }}"></script>
+<script type="text/javascript">
+  document.getElementById('pay-button').onclick = function() {
+    // SnapToken acquired from previous step
+    snap.pay('{{ $snap_token }}', {
+      // Optional
+      onSuccess: function(result) {
+        /* You may add your own js here, this is just example */
+        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+      },
+      // Optional
+      onPending: function(result) {
+        /* You may add your own js here, this is just example */
+        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+      },
+      // Optional
+      onError: function(result) {
+        /* You may add your own js here, this is just example */
+        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+      }
+    });
+  };
+</script>
