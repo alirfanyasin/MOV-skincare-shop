@@ -20,8 +20,28 @@
           <button class="btn-skintest text-white rounded-pill border-0 fw-semibold py-2 px-5 outline-0">Ambil Skin
             Test</button>
         </a>
-        <a class="nav-link" href="/cart" wire:navigate><iconify-icon icon="bx:cart" class="fs-3"></iconify-icon></a>
-        <a class="nav-link" href="#"><iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon></a>
+
+        <a class="nav-link  position-relative mx-2" href="/cart" wire:navigate>
+          <iconify-icon icon="bx:cart" class="fs-3"></iconify-icon>
+          @if ($cartCount > 0)
+            <span class="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-danger">
+              {{ $cartCount }}
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          @endif
+        </a>
+        <div class="btn-group nav-link">
+          <button type="button" class="bg-transparent profile-dropdown border-0 dropdown-toggle"
+            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            @auth
+              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+            @endauth
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -31,6 +31,8 @@
 
   {{-- Vite --}}
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+  {{-- <link rel="stylesheet" href="app-CfJENQSC.css">
+  <script src="app-DkDdL2UM.js"></script> --}}
 </head>
 
 <body>

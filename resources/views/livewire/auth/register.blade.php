@@ -1,19 +1,35 @@
-<form action="">
+<form wire:submit.prevent='register'>
   <div class="mb-4">
     <label for="" class="fw-semibold green-color mb-2">Nama Lengkap</label>
-    <input type="text" name="name" id="" class="form-control" placeholder="Tulis Nama Lengkap">
+    <input type="text" name="name" id="" wire:model='name' class="form-control"
+      placeholder="Tulis Nama Lengkap">
+    @error('name')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
   </div>
   <div class="mb-4">
     <label for="" class="fw-semibold green-color mb-2">Email</label>
-    <input type="email" name="email" id="" class="form-control" placeholder="email@example.com">
+    <input type="email" name="email" id="" wire:model='email' class="form-control"
+      placeholder="email@example.com">
+    @error('email')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
   </div>
   <div class="mb-4">
     <label for="" class="fw-semibold green-color mb-2">No telepon</label>
-    <input type="text" name="no_phone" id="" class="form-control" placeholder="+62****">
+    <input type="text" name="no_phone" id="" wire:model='phone_number' class="form-control"
+      placeholder="+62****">
+    @error('phone_number')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
   </div>
   <div class="mb-4">
     <label for="" class="fw-semibold green-color mb-2">Kata Sandi</label>
-    <input type="password" name="password" id="" class="form-control" placeholder="Tulis Kata Sandi">
+    <input type="password" name="password" id="" wire:model='password' class="form-control"
+      placeholder="Tulis Kata Sandi">
+    @error('password')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
   </div>
   <div class="mt-5">
     <div class="d-flex justify-content-between">

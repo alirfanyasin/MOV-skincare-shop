@@ -40,71 +40,31 @@
     <div class="row">
       <div class="col-1"></div>
       <div class="col">
-        <div class="row my-2">
-          <div class="col">
-            <div class="d-flex justify-content-between align-items-center ">
-              <div class="d-flex">
-                <div class="overflow-hidden rounded-4 border " style="width: 130px;">
-                  <img src="/mov-assets/product/img-product-1.png" alt="" width="100%">
+        @foreach ($products as $product)
+          <div class="row my-2">
+            <div class="col">
+              <div class="d-flex justify-content-between align-items-center ">
+                <div class="d-flex">
+                  <div class="overflow-hidden rounded-4 border " style="width: 130px;">
+                    <img src="{{ $product->product->image }}" alt="" width="100%">
+                  </div>
+                  <div class="ms-4">
+                    <h4 class="fw-bold">{{ $product->product->title }}</h5>
+                      <h5>Rp. {{ number_format($product->price, 0, ',', '.') }}</h5>
+                      <h5>{{ $product->quantity }}x</h5>
+                  </div>
                 </div>
-                <div class="ms-4">
-                  <h4 class="fw-bold">Serum Vitamin C</h5>
-                    <h5>Rp. 102.000</h5>
-                    <h5>1x</h5>
+                <div>
+                  <a href="#" wire:click.prevent='delete({{ $product->id }})'
+                    class="text-decoration-none text-danger">
+                    <iconify-icon icon="humbleicons:times" class="fs-30"></iconify-icon>
+                  </a>
                 </div>
-              </div>
-              <div>
-                <a href="" class="text-decoration-none text-danger">
-                  <iconify-icon icon="humbleicons:times" class="fs-30"></iconify-icon>
-                </a>
               </div>
             </div>
           </div>
-        </div>
-        <hr>
-        <div class="row my-2">
-          <div class="col">
-            <div class="d-flex justify-content-between align-items-center ">
-              <div class="d-flex">
-                <div class="overflow-hidden rounded-4 border " style="width: 130px;">
-                  <img src="/mov-assets/product/img-product-1.png" alt="" width="100%">
-                </div>
-                <div class="ms-4">
-                  <h4 class="fw-bold">Serum Vitamin C</h5>
-                    <h5>Rp. 102.000</h5>
-                    <h5>1x</h5>
-                </div>
-              </div>
-              <div>
-                <a href="" class="text-decoration-none text-danger">
-                  <iconify-icon icon="humbleicons:times" class="fs-30"></iconify-icon>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="row my-2">
-          <div class="col">
-            <div class="d-flex justify-content-between align-items-center ">
-              <div class="d-flex">
-                <div class="overflow-hidden rounded-4 border " style="width: 130px;">
-                  <img src="/mov-assets/product/img-product-1.png" alt="" width="100%">
-                </div>
-                <div class="ms-4">
-                  <h4 class="fw-bold">Serum Vitamin C</h5>
-                    <h5>Rp. 102.000</h5>
-                    <h5>1x</h5>
-                </div>
-              </div>
-              <div>
-                <a href="" class="text-decoration-none text-danger">
-                  <iconify-icon icon="humbleicons:times" class="fs-30"></iconify-icon>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <hr>
+        @endforeach
       </div>
     </div>
 
@@ -126,7 +86,7 @@
                   <div class="fs-5">Estimasi tiba : 2 - 4 Mei</div>
                 </div>
                 <div>
-                  <span class="fs-5">Rp. 20.000</span>
+                  <span class="fs-5">Rp. {{ number_format($totalDelivery, 0, ',', '.') }}</span>
                 </div>
               </div>
             </div>
@@ -152,14 +112,14 @@
 
   <hr>
   {{-- Payment Method start --}}
-  <div class="container py-1 mt-3" id="msg-cart">
+  {{-- <div class="container py-1 mt-3" id="msg-cart">
     <div class="row">
       <div class="col-1"></div>
       <div class="col">
         <div class="row">
           <div class="col d-flex justify-content-between">
             <h5>Total Pesanan (1 Produk) : </h5>
-            <span class="fs-5 dark-cream-color fw-bold">Rp 102.000</span>
+            <span class="fs-5 dark-cream-color fw-bold">Rp. 125.000</span>
           </div>
         </div>
       </div>
@@ -174,9 +134,10 @@
         <span>Transfer Bank - Bank BCA</span>
       </div>
     </div>
-  </div>
+  </div> --}}
   {{-- Payment Method end --}}
-  <hr>
+
+
   {{-- Payment list start --}}
   <div class="container py-1 mt-3" id="msg-cart">
     <div class="row">
@@ -188,15 +149,15 @@
 
         <div class="d-flex justify-content-between ">
           <div class="fs-5">Subtotal Produk</div>
-          <div class="fs-5">Rp 102.000</div>
+          <div class="fs-5">Rp {{ number_format($totalPrice, 0, ',', '.') }}</div>
         </div>
         <div class="d-flex justify-content-between ">
           <div class="fs-5">Subtotal Pengiriman</div>
-          <div class="fs-5">Rp 20.000</div>
+          <div class="fs-5">Rp {{ number_format($totalDelivery, 0, ',', '.') }}</div>
         </div>
         <div class="d-flex justify-content-between ">
           <h5 class="fs-5 fw-bold">Total Pembayaran</h5>
-          <div class="fs-5 dark-cream-color fw-bold">Rp 122.000</div>
+          <div class="fs-5 dark-cream-color fw-bold">Rp {{ number_format($total, 0, ',', '.') }}</div>
         </div>
       </div>
     </div>
@@ -207,8 +168,8 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col d-flex justify-content-end">
-        <button class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2" data-bs-toggle="modal"
-          data-bs-target="#orderSuccessModal">Buat Pesanan</button>
+        <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2">Buat
+          Pesanan</button>
       </div>
     </div>
   </div>
@@ -218,13 +179,39 @@
   <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4">
+      <div class="modal-content">
         <div class="modal-body">
-          <h5 class="fw-bold text-center">Selamat Pesanan Kamu Berhasil</h5>
-          <img src="/mov-assets/success-order.png" alt="">
+          <img src="/mov-assets/success.png" alt="" class="w-100">
         </div>
-
       </div>
     </div>
   </div>
 </div>
+
+
+
+<!-- TODO: Remove ".sandbox" from script src URL for production environment. Also input your client key in "data-client-key" -->
+<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ env('MIDTRANS_CLIENT_KEY') }}"></script>
+<script type="text/javascript">
+  document.getElementById('pay-button').onclick = function() {
+    // SnapToken acquired from previous step
+    snap.pay('{{ $snap_token }}', {
+      // Optional
+      onSuccess: function(result) {
+        /* You may add your own js here, this is just example */
+        $('#orderSuccessModal').modal('show');
+        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+      },
+      // Optional
+      onPending: function(result) {
+        /* You may add your own js here, this is just example */
+        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+      },
+      // Optional
+      onError: function(result) {
+        /* You may add your own js here, this is just example */
+        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+      }
+    });
+  };
+</script>
