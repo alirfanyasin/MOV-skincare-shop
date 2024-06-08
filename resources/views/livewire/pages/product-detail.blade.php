@@ -40,11 +40,14 @@
       </div>
 
       <div class="mt-3">
-        <a href="" class="text-decoration-none py-3 me-2 px-5 text-dark cream-bg text-center rounded-2 fw-bold">
+        <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
+          class="text-decoration-none py-3 me-2 px-5 text-dark cream-bg text-center rounded-2 fw-bold">
           + Keranjang</a>
+
         <a href=""
           class="text-decoration-none cream-border py-3 px-5 mb-3 cream-color text-center rounded-2 fw-bold">
           Beli Sekarang</a>
+
       </div>
     </div>
   </div>

@@ -32,7 +32,7 @@
             <del class="text-secondary">Rp. 90.000</del>
 
             <div class="mt-4">
-              <a href=""
+              <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
                 class="text-decoration-none py-2 mb-2 text-dark cream-bg text-center d-block rounded-2 fw-bold">
                 + Keranjang</a>
               <a href=""

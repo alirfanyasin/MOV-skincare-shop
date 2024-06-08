@@ -13,6 +13,7 @@ class Cart extends Component
 
     public function render()
     {
+        session()->forget('cart_count');
         return view('livewire.pages.cart');
     }
 }
