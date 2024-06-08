@@ -168,26 +168,24 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col d-flex justify-content-end">
-        <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2"
-          data-bs-toggle="modal" data-bs-target="#orderSuccessModal">Buat Pesanan</button>
+        <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2">Buat
+          Pesanan</button>
       </div>
     </div>
   </div>
 
 
   <!-- Alert -->
-  {{-- <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
+  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4">
+      <div class="modal-content">
         <div class="modal-body">
-          <h5 class="fw-bold text-center">Selamat Pesanan Kamu Berhasil</h5>
-          <img src="/mov-assets/success-order.png" alt="">
+          <img src="/mov-assets/success.png" alt="" class="w-100">
         </div>
-
       </div>
     </div>
-  </div> --}}
+  </div>
 </div>
 
 
@@ -201,6 +199,7 @@
       // Optional
       onSuccess: function(result) {
         /* You may add your own js here, this is just example */
+        $('#orderSuccessModal').modal('show');
         document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
       },
       // Optional
