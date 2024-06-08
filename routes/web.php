@@ -43,7 +43,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Index::class);
 Route::get('/product', Products::class);
-Route::get('/product/detail', ProductDetail::class);
+Route::get('/product/{slug}', ProductDetail::class);
 
 Route::get('/skin-type', SkinType::class);
 Route::get('/skin-news', SkinNews::class);

@@ -1,7 +1,7 @@
 <div class="row">
   @foreach ($products as $product)
     <div class="col-md-3 mb-3">
-      <a href="/product/detail" wire:navigate class="text-decoration-none d-block">
+      <a href="/product/{{ $product->slug }}" wire:navigate class="text-decoration-none d-block">
         <div class="card rounded-4 overflow-hidden position-relative ">
           <div style="200px" class="overflow-hidden">
             <img src="{{ asset($product->image) }}" class="card-img-top h-100" alt="Product 1">

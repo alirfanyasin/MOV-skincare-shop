@@ -1,10 +1,10 @@
 <div>
   <div class="row">
     <div class="col-md-6">
-      <img src="/mov-assets/product/product-1.png" alt="Img Product 1" width="100%">
+      <img src="{{ asset($product->image) }}" alt="Img Product 1" width="100%">
     </div>
     <div class="col-md-6">
-      <h3 class="fw-bold text-dark">Serum Vitamin C</h3>
+      <h3 class="fw-bold text-dark">{{ $product->title }}</h3>
       <div class="text-secondary">
         <span class="me-2">154 Penilaian</span>|
         <span class="mx-2">203 Terjual</span>|
@@ -24,9 +24,11 @@
         <small class="text-main fs-20  ms-2 my-3 text-dark">5.0/5</small>
       </div>
       <div class="price">
-        <h2 class="text-dark fw-semibold ">Rp. 102.000</h2>
-        <span class="orange-color rounded-pill px-2 py-1 discount">25%</span>
-        <del class="text-secondary">Rp. 90.000</del>
+        <h2 class="text-dark fw-semibold ">Rp. {{ number_format($product->price, 0, ',', '.') }}</h2>
+        @if ($product->discount !== 0)
+          <span class="orange-color rounded-pill px-2 py-1 discount">{{ $product->discount }}%</span>
+          <del class="text-secondary">Rp. 90.000</del>
+        @endif
         <p class="text-secondary my-3">Tersisah 732 produk</p>
       </div>
 
@@ -56,13 +58,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat eius autem laboriosam quis beatae
-          dicta
-          quisquam, animi ullam. Pariatur voluptatum doloribus doloremque veniam nulla fuga repudiandae eius cumque
-          veritatis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur voluptatibus nemo commodi minus nisi
-          cumque veniam aliquam quis quas sed eius at perferendis quidem doloremque modi quo, aliquid velit maxime ea
-          ducimus. Quaerat aperiam rerum quidem qui, fugiat at beatae.</p>
+        <p>{{ $product->description }}</p>
       </div>
     </div>
   </div>
