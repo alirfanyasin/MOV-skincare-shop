@@ -200,7 +200,8 @@
       onSuccess: function(result) {
         /* You may add your own js here, this is just example */
         $('#orderSuccessModal').modal('show');
-        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+        Livewire.dispatch('paymentSuccess');
+        // document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
       },
       // Optional
       onPending: function(result) {

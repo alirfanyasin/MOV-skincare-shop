@@ -14,6 +14,8 @@ class Cart extends Component
     #[Title('Cart')]
     #[Layout('layouts.app')]
 
+    protected $listeners = ['paymentSuccess', 'paymentCancel'];
+
     public $totalDelivery = 20000;
     public $totalPrice;
     public $total;
@@ -24,6 +26,9 @@ class Cart extends Component
     {
     }
 
+    public function paymentSuccess()
+    {
+    }
 
     public function midtrans()
     {
