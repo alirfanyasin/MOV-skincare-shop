@@ -6,12 +6,13 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class AboutSelf11 extends Component
+class LifeStyle extends Component
 {
-    #[Title('Skin Test - Dalam sebulan terakhir,seberapa sering kamu menggunakan retinol?')]
+    #[Title('Skin Test - Gaya Hidup')]
     #[Layout('layouts.skintest')]
+
     public function render()
     {
-        return view('livewire.pages.skintest.about-self11');
+        return view('livewire.pages.skintest.life-style');
     }
 }
