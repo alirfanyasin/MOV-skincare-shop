@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\HomePage;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
+use App\Livewire\Pages\AboutUs;
 use App\Livewire\Pages\Cart;
 use App\Livewire\Pages\Index;
 use App\Livewire\Pages\ProductDetail;
@@ -75,4 +76,7 @@ Route::middleware(['auth'])->group(function () {
 
   // Cart
   Route::get('/cart', Cart::class);
+
+  // About us
+  Route::get('/about-us', AboutUs::class);
 });

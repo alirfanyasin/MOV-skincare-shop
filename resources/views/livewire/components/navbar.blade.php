@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg white-bg shadow fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/" wire:navigate>
       <img src="/mov-assets/logo/logo.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -11,8 +11,8 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/" wire:navigate>Beranda</a>
         <a class="nav-link" href="/product" wire:navigate>Produk</a>
-        <a class="nav-link" href="#">Tentang Kami</a>
-        <a class="nav-link" href="#">Artikel</a>
+        <a class="nav-link" href="/about-us" wire:navigate>Tentang Kami</a>
+        <a class="nav-link" href="/skin-news" wire:navigate>Artikel</a>
       </div>
       <div class="me-auto"></div>
       <div class="navbar-nav d-flex align-items-center">

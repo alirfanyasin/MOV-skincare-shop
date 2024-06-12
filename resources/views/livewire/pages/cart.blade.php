@@ -180,7 +180,7 @@
   <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content p-0">
         <div class="modal-body">
           <img src="/mov-assets/success.png" alt="" class="w-100">
         </div>

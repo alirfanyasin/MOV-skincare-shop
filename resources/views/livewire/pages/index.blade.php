@@ -1,5 +1,5 @@
 <div>
-  @include('livewire.sections.skintest')
+  @include('livewire.sections.caraousel')
 
   <div id="banner">
     <img src="/mov-assets/img-banner-1.png" alt="banner" width="100%">
@@ -66,5 +66,35 @@
 
 
   @livewire('sections.testimonial')
+
+
+  <!-- Alert -->
+  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0 position-relative">
+          <img src="/mov-assets/popup.png" alt="" class="w-100">
+          <div class="position-absolute" style="bottom: 50px; left: 95px;">
+            <a href="/skintest/name" wire:navigate
+              class="text-decoration-none shadow-lg d-inline-block text-white fw-bold py-1 mt-3 text-uppercase rounded-pill px-3 linear4-bg">Ambil
+              Skin Test</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function() {
+      if (!localStorage.getItem('modalShown')) {
+        setTimeout(function() {
+          $('#orderSuccessModal').modal('show');
+          localStorage.setItem('modalShown', 'true');
+        }, 5000);
+      }
+    });
+  </script>
 
 </div>

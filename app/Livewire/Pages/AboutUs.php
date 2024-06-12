@@ -6,19 +6,13 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Index extends Component
+class AboutUs extends Component
 {
-    #[Title('Landing Page')]
+    #[Title('Tentang Kami')]
     #[Layout('layouts.app')]
-
-    public function mount()
-    {
-        session()->forget('skinType');
-    }
-
 
     public function render()
     {
-        return view('livewire.pages.index');
+        return view('livewire.pages.about-us');
     }
 }

@@ -14,6 +14,11 @@ class Products extends Component
     #[Title('Products')]
     #[Layout('layouts.product-layout')]
 
+    public function mount()
+    {
+        session()->forget('skinType');
+    }
+
 
     public function add_to_cart($product_id, $price)
     {
