@@ -13,7 +13,6 @@
         <div class="card overflow-hidden rounded-4 border-0">
           <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
             <p class="card-text">Tranexamic Acid Tidak Boleh Dicampur Dengan Kandungan Berikut Ini.</p>
           </div>
         </div>
@@ -22,9 +21,7 @@
         <div class="card overflow-hidden rounded-4 border-0">
           <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">5 Tips Merawat Kulit Wajah Berminyak</p>
           </div>
         </div>
       </div>
@@ -32,9 +29,7 @@
         <div class="card overflow-hidden rounded-4 border-0">
           <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">Pentingnya Skincare Awareness di Usia Remaja.</p>
           </div>
         </div>
       </div>
@@ -42,9 +37,7 @@
         <div class="card overflow-hidden rounded-4 border-0">
           <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">6 Manfaat Menggunakan Skincare yang Wajib Diketahui.</p>
           </div>
         </div>
       </div>
@@ -53,8 +46,8 @@
     <div class="row">
       <div class="col">
         <div class="d-flex justify-content-center">
-          <a href="" wire:navigate
-            class="text-decoration-none green-color white-bg shadow py-2 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Lihat
+          <a href="/skin-news" wire:navigate
+            class="text-decoration-none white-color dark-cream-bg  shadow py-3 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Lihat
             Lainnya &rightarrow;</a>
         </div>
       </div>
