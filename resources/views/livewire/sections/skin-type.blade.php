@@ -30,7 +30,7 @@
 
         <div class="d-flex justify-content-start">
           <a href="" wire:navigate
-            class="text-decoration-none green-color white-bg shadow py-3 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Cek
+            class="text-decoration-none white-color linear-bg shadow py-3 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Cek
             Produk &rightarrow;</a>
         </div>
       </div>
@@ -77,7 +77,7 @@
         </p>
         <div class="d-flex justify-content-start">
           <a href="" wire:navigate
-            class="text-decoration-none green-color white-bg shadow py-3 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Cek
+            class="text-decoration-none white-color linear-bg shadow py-3 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Cek
             Rekomendasi
             Produk &rightarrow;</a>
         </div>

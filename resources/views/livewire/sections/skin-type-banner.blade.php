@@ -5,7 +5,7 @@
 
     @if (Request::is('/') == true || Request::is('about-us') == true)
       <a href="{{ Request::is('/') ? '/skin-type' : '' }}{{ Request::is('about-us') ? '/skin-type' : '' }}" wire:navigate
-        class="text-decoration-none text-white dark-cream-bg py-2 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Pelajari
+        class="text-decoration-none white-bg dark-cream-color py-2 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Pelajari
         Selengkapnya</a>
     @endif
   </div>

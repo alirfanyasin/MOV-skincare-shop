@@ -77,6 +77,24 @@
 }
 
 
+.linear-bg {
+  background: linear-gradient(to right, #F7B787, #F57906);
+}
+.linear2-bg {
+  background: linear-gradient(to bottom right, #F9E8D9, #F7B787);
+}
+.linear3-bg {
+  background: linear-gradient(to right, #F9E8D9, #F7B787);
+}
+.linear4-bg {
+  background: linear-gradient(to right, #F57906, #F7B787);
+}
+
+.linear5-bg {
+  background: linear-gradient(to right, #F9E8D9, #ffffff);
+}
+
+
 /* Border custom */
 .cream-border {
   border: 1px solid var(--cream-color);
@@ -123,6 +141,9 @@
 }
 .fs-70 {
   font-size: 70px;
+}
+.fs-80 {
+  font-size: 80px;
 }
 
 .fs-100 {
