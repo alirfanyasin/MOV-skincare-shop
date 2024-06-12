@@ -14,6 +14,8 @@ class Cart extends Component
     #[Title('Cart')]
     #[Layout('layouts.app')]
 
+    protected $listeners = ['paymentSuccess', 'paymentCancel'];
+
     public $totalDelivery = 20000;
     public $totalPrice;
     public $total;
@@ -24,38 +26,18 @@ class Cart extends Component
     {
     }
 
-
-    public function midtrans()
+    public function paymentSuccess()
     {
-        // Set your Merchant Server Key
-        \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
-        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-        \Midtrans\Config::$isProduction = env('MIDTRANS_IS_PRODUCTION');
-        // Set sanitization on (default)
-        \Midtrans\Config::$isSanitized = env('MIDTRANS_IS_SANITIZED');
-        // Set 3DS transaction for credit card to true
-        \Midtrans\Config::$is3ds = env('MIDTRANS_IS_3DS');
-
-        $params = [
-            'transaction_details' => [
-                'order_id' => $this->codeTrx,
-                'gross_amount' => session('total'),
-            ],
-            'customer_details' => [
-                'first_name' => Auth::user()->name,
-                'email' => Auth::user()->email,
-            ],
-        ];
-
-        $this->snapToken = \Midtrans\Snap::getSnapToken($params);
     }
+
+
 
     public function calculateTotal()
     {
         $this->codeTrx = Str::random(10);
 
         $this->totalPrice = 0;
-        $data = ModelsCart::all();
+        $data = ModelsCart::where('user_id', Auth::user()->id)->get();
         $this->totalPrice = $data->sum(function ($item) {
             return $item->price * $item->quantity;
         });
@@ -69,21 +51,17 @@ class Cart extends Component
     {
         $data = ModelsCart::find($id);
         $data->delete();
-        $this->redirect('cart');
         $this->calculateTotal();
-        $this->midtrans();
     }
 
 
     public function render()
     {
-
         session()->forget('cart_count');
         $this->calculateTotal();
-        $this->midtrans();
 
         return view('livewire.pages.cart', [
-            'products' => ModelsCart::orderBy('id', 'DESC')->get(),
+            'products' => ModelsCart::orderBy('id', 'DESC')->where('user_id', Auth::user()->id)->get(),
             'totalPrice' => $this->totalPrice,
             'totalDelivery' => $this->totalDelivery,
             'total' => session('total'),

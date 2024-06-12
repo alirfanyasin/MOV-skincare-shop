@@ -112,14 +112,14 @@
 
   <hr>
   {{-- Payment Method start --}}
-  {{-- <div class="container py-1 mt-3" id="msg-cart">
+  <div class="container py-1 mt-3" id="msg-cart">
     <div class="row">
       <div class="col-1"></div>
       <div class="col">
         <div class="row">
           <div class="col d-flex justify-content-between">
             <h5>Total Pesanan (1 Produk) : </h5>
-            <span class="fs-5 dark-cream-color fw-bold">Rp. 125.000</span>
+            <span class="fs-5 dark-cream-color fw-semibold">Rp. {{ number_format($totalPrice, 0, ',', '.') }}</span>
           </div>
         </div>
       </div>
@@ -134,10 +134,10 @@
         <span>Transfer Bank - Bank BCA</span>
       </div>
     </div>
-  </div> --}}
+  </div>
   {{-- Payment Method end --}}
 
-
+  <hr>
   {{-- Payment list start --}}
   <div class="container py-1 mt-3" id="msg-cart">
     <div class="row">
@@ -157,7 +157,7 @@
         </div>
         <div class="d-flex justify-content-between ">
           <h5 class="fs-5 fw-bold">Total Pembayaran</h5>
-          <div class="fs-5 dark-cream-color fw-bold">Rp {{ number_format($total, 0, ',', '.') }}</div>
+          <div class="fs-5 dark-cream-color fw-semibold">Rp {{ number_format($total, 0, ',', '.') }}</div>
         </div>
       </div>
     </div>
@@ -168,7 +168,8 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col d-flex justify-content-end">
-        <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2">Buat
+        <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2"
+          data-bs-toggle="modal" data-bs-target="#orderSuccessModal">Buat
           Pesanan</button>
       </div>
     </div>
@@ -187,31 +188,3 @@
     </div>
   </div>
 </div>
-
-
-
-<!-- TODO: Remove ".sandbox" from script src URL for production environment. Also input your client key in "data-client-key" -->
-<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ env('MIDTRANS_CLIENT_KEY') }}"></script>
-<script type="text/javascript">
-  document.getElementById('pay-button').onclick = function() {
-    // SnapToken acquired from previous step
-    snap.pay('{{ $snap_token }}', {
-      // Optional
-      onSuccess: function(result) {
-        /* You may add your own js here, this is just example */
-        $('#orderSuccessModal').modal('show');
-        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
-      },
-      // Optional
-      onPending: function(result) {
-        /* You may add your own js here, this is just example */
-        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
-      },
-      // Optional
-      onError: function(result) {
-        /* You may add your own js here, this is just example */
-        document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
-      }
-    });
-  };
-</script>

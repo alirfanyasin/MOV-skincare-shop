@@ -17,7 +17,7 @@
   </div>
   <div class="mb-4">
     <label for="" class="fw-semibold green-color mb-2">No telepon</label>
-    <input type="text" name="no_phone" id="" wire:model='phone_number' class="form-control"
+    <input type="number" name="no_phone" id="" wire:model='phone_number' class="form-control"
       placeholder="+62****">
     @error('phone_number')
       <small class="text-danger">{{ $message }}</small>

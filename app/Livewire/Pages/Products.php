@@ -4,6 +4,7 @@ namespace App\Livewire\Pages;
 
 use App\Models\Cart;
 use App\Models\Product;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -17,6 +18,7 @@ class Products extends Component
     public function add_to_cart($product_id, $price)
     {
         Cart::create([
+            'user_id' => Auth::user()->id,
             'product_id' => $product_id,
             'price' => $price,
         ]);
@@ -25,6 +27,16 @@ class Products extends Component
         $this->dispatch('cart_count', $cartCount);
     }
 
+
+    public function buy_now($product_id, $price)
+    {
+        Cart::create([
+            'user_id' => Auth::user()->id,
+            'product_id' => $product_id,
+            'price' => $price,
+        ]);
+        $this->redirect('cart');
+    }
 
     public function render()
     {

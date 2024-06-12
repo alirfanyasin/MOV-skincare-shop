@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="title" content="EduTech">
+  <meta name="title" content="Mov Skincare">
   <meta name="description" content="Penjualan skincare yang original">
   <meta name="keywords" content="online shop, skincare, health">
   <meta name="author" content="Irfan Yasin">
@@ -27,6 +27,7 @@
 
   {{-- Vite --}}
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+  {{-- <link rel="stylesheet" href="/build/assets/app-DcDHF_vU.css"> --}}
 </head>
 
 <body>
@@ -68,7 +69,7 @@
   </main>
 
 
-
+  {{-- <script src="/build/assets/app-DkDdL2UM.js"></script> --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   {{-- Iconify --}}

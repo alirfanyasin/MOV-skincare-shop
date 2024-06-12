@@ -23,18 +23,16 @@
       <div class="col-md-3 d-flex justify-content-center">
         <div>
           <header>
-            <h5 class="fw-semibold text-uppercase">Company</h5>
+            <h5 class="fw-semibold text-uppercase">Perusahaan</h5>
           </header>
 
           <ul class="ps-0">
-            <li class="list-unstyled"><a href="" class="lh-lg text-decoration-none text-dark fw-light">About</a>
+            <li class="list-unstyled"><a href="" class="lh-lg text-decoration-none text-dark fw-light">Tentang
+                Kami</a>
             </li>
-            <li class="list-unstyled"><a href=""
-                class="lh-lg text-decoration-none text-dark fw-light">Features</a>
+            <li class="list-unstyled"><a href="" class="lh-lg text-decoration-none text-dark fw-light">Fitur</a>
             </li>
-            <li class="list-unstyled"><a href="" class="lh-lg text-decoration-none text-dark fw-light">Works</a>
-            </li>
-            <li class="list-unstyled"><a href="" class="lh-lg text-decoration-none text-dark fw-light">Career</a>
+            <li class="list-unstyled"><a href="" class="lh-lg text-decoration-none text-dark fw-light">Karir</a>
             </li>
           </ul>
         </div>
