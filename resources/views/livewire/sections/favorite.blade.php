@@ -48,7 +48,7 @@
                   <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
                     class="text-decoration-none py-2 mb-2 text-dark cream-bg text-center d-block rounded-2 fw-bold">
                     + Keranjang</a>
-                  <a href=""
+                  <a href="#" wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})'
                     class="text-decoration-none cream-border py-2 mb-3 cream-color text-center d-block rounded-2 fw-bold">
                     Beli Sekarang</a>
                 </div>

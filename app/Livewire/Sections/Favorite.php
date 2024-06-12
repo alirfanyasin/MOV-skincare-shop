@@ -21,6 +21,16 @@ class Favorite extends Component
         $this->dispatch('cart_count', $cartCount);
     }
 
+    public function buy_now($product_id, $price)
+    {
+        Cart::create([
+            'user_id' => Auth::user()->id,
+            'product_id' => $product_id,
+            'price' => $price,
+        ]);
+        $this->redirect('cart');
+    }
+
     public function render()
     {
         return view('livewire.sections.favorite', [
