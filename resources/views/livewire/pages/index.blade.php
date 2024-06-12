@@ -5,6 +5,23 @@
     <img src="/mov-assets/img-banner-1.png" alt="banner" width="100%">
   </div>
 
+  <section id="product-category" class="mt-5" style="margin-bottom: 150px;">
+    <header class="text-center mb-5">
+      <h3 class="text-uppercase green-color fw-bold">Panduan Pengguna</h3>
+    </header>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12">
+          <div class="card light-cream-bg rounded-4 border-0 p-5">
+            <div class="card-body ">
+              <img src="/mov-assets/user-journey.png" alt="" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="product-category" class="mt-5" style="margin-bottom: 200px;">
     <header class="text-center mb-5">
       <h3 class="text-uppercase green-color fw-bold">Kategori Produk</h3>
