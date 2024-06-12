@@ -8,7 +8,7 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-between">
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#" wire:click.prevent='skin_type("Kulit Kering")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-kering.png" alt="" width="100%">
@@ -20,7 +20,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#" wire:click.prevent='skin_type("Kulit Berminyak")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-berminyak.png" alt="" width="100%">
@@ -31,7 +31,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#" wire:click.prevent='skin_type("Kulit Normal")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-normal.png" alt="" width="100%">
@@ -43,7 +43,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#" wire:click.prevent='skin_type("Kulit Kombinasi")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-kombinasi.png" alt="" width="100%">
@@ -55,7 +55,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#" wire:click.prevent='skin_type("Kulit Sensitif")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-sensitif.png" alt="" width="100%">

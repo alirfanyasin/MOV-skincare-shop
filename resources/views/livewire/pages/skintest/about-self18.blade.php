@@ -17,11 +17,17 @@
   <div class="container mt-5" id="result">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-md-3">
-        <img src="/mov-assets/img-result-2.png" alt="Hasil" class="mb-5" width="100%">
+        <img
+          src="/mov-assets/result/{{ session('skinType') == 'Kulit Berminyak' ? 'img-berminyak.png' : '' }}{{ session('skinType') == 'Kulit Kering' ? 'img-kering.png' : '' }}{{ session('skinType') == 'Kulit Normal' ? 'img-normal.png' : '' }}{{ session('skinType') == 'Kulit Kombinasi' ? 'img-kombinasi.png' : '' }}{{ session('skinType') == 'Kulit Sensitif' ? 'img-sensitif.png' : '' }}"
+          alt="Hasil" class="mb-5" width="100%">
       </div>
       <div class="col-md-5">
-        <h3 class="fw-bold">Tipe Kulit Kamu,<span class="dark-cream-color">BERMINYAK</span></h3>
-        <p class="mt-3">Kulit terlihat berkilau dan berminyak saat disentuh dan sering tumbuh jerawat</p>
+        <h3 class="fw-bold">Tipe Kulit Kamu,<span
+            class="dark-cream-color">{{ session('skinType') == 'Kulit Berminyak' ? 'BERMINYAK' : '' }}{{ session('skinType') == 'Kulit Kering' ? 'KERING' : '' }}{{ session('skinType') == 'Kulit Normal' ? 'NORMAL' : '' }}{{ session('skinType') == 'Kulit Kombinasi' ? 'KOMBINASI' : '' }}{{ session('skinType') == 'Kulit Sensitif' ? 'SENSITIF' : '' }}</span>
+        </h3>
+        <p class="mt-3">
+          {{ session('skinType') == 'Kulit Berminyak' ? 'Kulit terlihat berkilau dan berminyak saat disentuh dan sering tumbuh jerawat' : '' }}{{ session('skinType') == 'Kulit Kering' ? 'Kadang kulit terasa sering ketarik. Sering dehidrasi dan timbul bercak kulit kering.' : '' }}{{ session('skinType') == 'Kulit Normal' ? 'Kulit terasa halus, tidak ada kulit mengelupas ataupun terlalu berminyak.' : '' }}{{ session('skinType') == 'Kulit Kombinasi' ? 'Berminyak di bagian T-Zone tetapi normal atau kering di bagian pipi dan dagu.' : '' }}{{ session('skinType') == 'Kulit Sensitif' ? 'Kering dan gatal di beberapa area wajah. Mudah kemerahan dan kulit terkelupas.' : '' }}
+        </p>
 
         <div class="d-flex justify-content-start">
           <a href="/product" wire:navigate

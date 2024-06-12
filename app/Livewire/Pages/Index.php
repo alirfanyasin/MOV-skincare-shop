@@ -11,6 +11,12 @@ class Index extends Component
     #[Title('Landing Page')]
     #[Layout('layouts.app')]
 
+    public function mount()
+    {
+        session()->forget('skinType');
+    }
+
+
     public function render()
     {
         return view('livewire.pages.index');

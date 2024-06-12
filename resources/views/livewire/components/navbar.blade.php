@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg white-bg shadow fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/" wire:navigate>
       <img src="/mov-assets/logo/logo.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
