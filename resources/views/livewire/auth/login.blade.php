@@ -35,4 +35,9 @@
     <button type="submit"
       class="green-bg border-0 text-white fw-bold text-uppercase px-5 py-2 rounded-pill">Masuk</button>
   </div>
+  <div class="text-center mt-4">
+    Apakah kamu belum memiliki akun? <a href="/register" wire:navigate
+      class="text-decoration-none fw-bold dark-cream-color">Daftar</a>
+  </div>
+
 </form>

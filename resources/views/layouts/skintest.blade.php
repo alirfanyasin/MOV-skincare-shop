@@ -30,8 +30,8 @@
     href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 
   {{-- Vite --}}
-  {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-  <link rel="stylesheet" href="/build/assets/app-DcDHF_vU.css">
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
+  {{-- <link rel="stylesheet" href="/build/assets/app-DcDHF_vU.css"> --}}
 </head>
 
 <body>
@@ -90,7 +90,7 @@
   </div>
 
 
-  <script src="/build/assets/app-DkDdL2UM.js"></script>
+  {{-- <script src="/build/assets/app-DkDdL2UM.js"></script> --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   {{-- Iconify --}}

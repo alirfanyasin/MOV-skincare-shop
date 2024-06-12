@@ -29,17 +29,9 @@
           <span class="orange-color rounded-pill px-2 py-1 discount">{{ $product->discount }}%</span>
           <del class="text-secondary">Rp. 90.000</del>
         @endif
-        <p class="text-secondary my-3">Tersisah 732 produk</p>
+        <p class="text-secondary my-3">Tersisah {{ $product->stock }} produk</p>
       </div>
-
-      <div class="d-flex mt-4">
-        <button
-          class=" cream-border px-3 mb-3 cream-color text-center rounded-2 fw-bold bg-transparent">&minus;</button>
-        <h5 class="mx-3">1</h5>
-        <button class=" cream-border px-3 mb-3 cream-color text-center rounded-2 fw-bold bg-transparent">&plus;</button>
-      </div>
-
-      <div class="mt-3">
+      <div class="mt-5">
         <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
           class="text-decoration-none py-3 me-2 px-5 text-dark cream-bg text-center rounded-2 fw-bold">
           + Keranjang</a>
@@ -47,11 +39,10 @@
         <a href=""
           class="text-decoration-none cream-border py-3 px-5 mb-3 cream-color text-center rounded-2 fw-bold">
           Beli Sekarang</a>
-
       </div>
     </div>
   </div>
-  <div class="description-product mb-3">
+  <div class="description-product mb-3 mt-5">
     <div class="row">
       <div class="col">
         <header>
