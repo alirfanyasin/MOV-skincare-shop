@@ -13,7 +13,7 @@
               gaya
               hidup, dan kondisi kulitmu.</p>
             <div>
-              <a href="/skintest/old" wire:navigate
+              <a href="/skintest/about-self" wire:navigate
                 class="text-decoration-none d-inline-block text-white fs-3 fw-bold py-2 mt-3 rounded-pill px-5 dark-cream-bg text-uppercase ">Lanjut</a>
             </div>
           </div>

@@ -35,7 +35,8 @@
 </head>
 
 <body>
-  <div style="" class="{{ Request::is('skintest/result') ? 'white-bg' : 'light-cream-bg' }} vh-100">
+  <div style=""
+    class="{{ Request::is('skintest/result') ? 'white-bg' : 'light-cream-bg' }} {{ Request::is('skintest/name') ? 'vh-100' : 'h-100' }}  ">
 
     <div class="white-bg {{ Request::is('skintest/result') ? 'white-bg' : '' }}">
       <nav class="navbar py-3">
@@ -53,25 +54,27 @@
         <div class="card mb-3 border-0">
           <div class="card-body">
             <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x">
-              <div class="step completed">
+              <div class="step {{ Request::is('skintest/*') ? 'completed' : '' }}">
                 <div class="step-icon-wrap">
                   <div class="step-icon">1</div>
                 </div>
                 <h4 class="step-title">Tentang Diri</h4>
               </div>
-              <div class="step completed">
+              <div
+                class="step {{ Request::is('skintest/about-skin') ? 'completed' : '' }}  {{ Request::is('skintest/result') ? 'completed' : '' }} {{ Request::is('skintest/life-style') ? 'completed' : '' }}">
                 <div class="step-icon-wrap">
                   <div class="step-icon">2</div>
                 </div>
                 <h4 class="step-title">Kulit</h4>
               </div>
-              <div class="step">
+              <div
+                class="step  {{ Request::is('skintest/life-style') ? 'completed' : '' }} {{ Request::is('skintest/result') ? 'completed' : '' }}">
                 <div class="step-icon-wrap">
                   <div class="step-icon">3</div>
                 </div>
                 <h4 class="step-title">Gaya Hidup</h4>
               </div>
-              <div class="step">
+              <div class="step  {{ Request::is('skintest/result') ? 'completed' : '' }}">
                 <div class="step-icon-wrap">
                   <div class="step-icon">4</div>
                 </div>

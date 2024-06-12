@@ -16,7 +16,7 @@
       </div>
       <div class="me-auto"></div>
       <div class="navbar-nav d-flex align-items-center">
-        <a class="nav-link active" aria-current="page" href="/" wire:navigate>
+        <a class="nav-link active" aria-current="page" href="/skintest/name" wire:navigate>
           <button class="btn-skintest text-white rounded-pill border-0 fw-semibold py-2 px-5 outline-0">Ambil Skin
             Test</button>
         </a>
