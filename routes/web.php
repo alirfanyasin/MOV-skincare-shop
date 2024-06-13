@@ -3,12 +3,15 @@
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\HomePage;
 use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Otp;
 use App\Livewire\Auth\Register;
+use App\Livewire\Auth\Success;
 use App\Livewire\Pages\AboutUs;
 use App\Livewire\Pages\Cart;
 use App\Livewire\Pages\Index;
 use App\Livewire\Pages\ProductDetail;
 use App\Livewire\Pages\Products;
+use App\Livewire\Pages\Promo;
 use App\Livewire\Pages\SkinNews;
 use App\Livewire\Pages\Skintest\AboutSelf;
 use App\Livewire\Pages\Skintest\AboutSelf1;
@@ -48,6 +51,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', Index::class);
 Route::get('/product', Products::class);
 Route::get('/product/{slug}', ProductDetail::class);
+Route::get('/promo', Promo::class);
+
 
 Route::get('/skin-type', SkinType::class);
 Route::get('/skin-news', SkinNews::class);
@@ -55,6 +60,8 @@ Route::get('/skin-news', SkinNews::class);
 Route::middleware(['guest'])->group(function () {
   // Authentication
   Route::get('/register', Register::class);
+  Route::get('/otp', Otp::class);
+  Route::get('/success', Success::class);
   Route::get('/login', Login::class)->name('login');
 });
 
@@ -74,9 +81,6 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/skintest/life-style', LifeStyle::class);
   Route::get('/skintest/result', AboutSelf18::class);
 
-  // Cart
   Route::get('/cart', Cart::class);
-
-  // About us
   Route::get('/about-us', AboutUs::class);
 });

@@ -69,8 +69,7 @@
 
 
   <!-- Alert -->
-  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="iklan" tabindex="-1" aria-labelledby="iklanSkintestModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body p-0 position-relative">
@@ -86,15 +85,5 @@
   </div>
 
 
-  <script>
-    $(document).ready(function() {
-      if (!localStorage.getItem('modalShown')) {
-        setTimeout(function() {
-          $('#orderSuccessModal').modal('show');
-          localStorage.setItem('modalShown', 'true');
-        }, 5000);
-      }
-    });
-  </script>
 
 </div>

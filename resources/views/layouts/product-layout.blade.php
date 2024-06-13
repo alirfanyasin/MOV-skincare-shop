@@ -27,7 +27,7 @@
 
   {{-- Vite --}}
   @vite(['resources/css/app.css', 'resources/js/app.js'])
-  {{-- <link rel="stylesheet" href="/build/assets/app-DcDHF_vU.css"> --}}
+  {{-- <link rel="stylesheet" href="/build/assets/app-DtG8GlKQ.css"> --}}
 </head>
 
 <body>
@@ -35,6 +35,11 @@
   @livewire('components.navbar')
 
   <main>
+    @if (Request::is('promo'))
+      <div class="">
+        <img src="/mov-assets/promo-image.png" alt="" style="margin-top: 30px;" class="w-100">
+      </div>
+    @endif
     <div id="product-layout">
       <div class="row">
         {{-- Left --}}

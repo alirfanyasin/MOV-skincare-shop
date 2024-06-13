@@ -2,8 +2,8 @@
   <div class="accordion mx-4" id="accordion-sidebar">
     <div class="accordion-item border-0">
       <h2 class="accordion-header">
-        <a href=""
-          class="text-decoration-none accordion-button no-collapsed collapsed text-capitalize cream-color fs-4 fw-bold bg-transparent border-0">
+        <a href="/promo" wire:navigate
+          class="text-decoration-none accordion-button no-collapsed collapsed text-capitalize cream-color fs-4 fw-bold {{ Request::is('promo') ? 'light-cream-bg' : 'bg-transparent' }} border-0">
           Promo
         </a>
       </h2>

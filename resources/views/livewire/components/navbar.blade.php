@@ -36,7 +36,6 @@
             <iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon>
           </button>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
             @auth
               <li><a class="dropdown-item" href="/logout">Logout</a></li>
             @endauth

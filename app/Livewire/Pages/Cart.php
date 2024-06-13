@@ -54,6 +54,13 @@ class Cart extends Component
         $this->calculateTotal();
     }
 
+    // public function delete_cart($user_id)
+    // {
+    //     $data = ModelsCart::where('user_id', $user_id)->get();
+    //     foreach ($data as $item) {
+    //         $item->delete();
+    //     }
+    // }
 
     public function render()
     {

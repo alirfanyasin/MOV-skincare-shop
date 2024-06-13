@@ -1,5 +1,5 @@
 <div>
-  <img src="/mov-assets/img-banner-2.png" alt="" width="100%" class="mb-5">
+  <img src="/mov-assets/artikel-banner.png" alt="" width="100%" class="mb-5">
   <div class="container">
     <header class="mb-5">
       <h1 class="fw-bold">Tranexamic Acid Tidak Boleh Dicampur Dengan Kandungan Berikut Ini</h1>

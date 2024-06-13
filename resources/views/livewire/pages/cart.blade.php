@@ -175,13 +175,14 @@
     </div>
   </div>
 
+  {{-- wire:click.prevent='delete_cart({{ Auth::user()->id }})' --}}
 
   <!-- Alert -->
   <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-0">
-        <div class="modal-body">
+      <div class="modal-content">
+        <div class="modal-body p-0">
           <img src="/mov-assets/success.png" alt="" class="w-100">
         </div>
       </div>

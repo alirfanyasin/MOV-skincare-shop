@@ -8,8 +8,8 @@
       </div>
     </div>
 
-    <div class="row autoplay-slider">
-      <div class="col-md-4 mx-2">
+    <div class="row autoplay-slide">
+      <div class="col-md-4">
         <div class="card rounded-4">
           <div class="card-body">
             <div id="" class="d-flex align-items-center">
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mx-2">
+      <div class="col-md-4">
         <div class="card rounded-4">
           <div class="card-body">
             <div id="" class="d-flex align-items-center">
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mx-2">
+      <div class="col-md-4">
         <div class="card rounded-4">
           <div class="card-body">
             <div id="" class="d-flex align-items-center">
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mx-2">
+      {{-- <div class="col-md-4 mx-2">
         <div class="card rounded-4">
           <div class="card-body">
             <div id="" class="d-flex align-items-center">
@@ -114,7 +114,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </section>
