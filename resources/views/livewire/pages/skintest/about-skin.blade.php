@@ -8,7 +8,7 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-between">
             <div class="col-md-2">
-              <a href="#" wire:click.prevent='skin_type("Kulit Kering")' class="d-blok text-decoration-none">
+              <a href="#question-2" wire:click='skin_type("Kulit Kering")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-kering.png" alt="" width="100%">
@@ -20,7 +20,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" wire:click.prevent='skin_type("Kulit Berminyak")' class="d-blok text-decoration-none">
+              <a href="#question-2" wire:click='skin_type("Kulit Berminyak")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-berminyak.png" alt="" width="100%">
@@ -31,7 +31,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" wire:click.prevent='skin_type("Kulit Normal")' class="d-blok text-decoration-none">
+              <a href="#question-2" wire:click='skin_type("Kulit Normal")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-normal.png" alt="" width="100%">
@@ -43,7 +43,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" wire:click.prevent='skin_type("Kulit Kombinasi")' class="d-blok text-decoration-none">
+              <a href="#question-2" wire:click='skin_type("Kulit Kombinasi")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-kombinasi.png" alt="" width="100%">
@@ -55,7 +55,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" wire:click.prevent='skin_type("Kulit Sensitif")' class="d-blok text-decoration-none">
+              <a href="#question-2" wire:click='skin_type("Kulit Sensitif")' class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kulit-sensitif.png" alt="" width="100%">
@@ -64,6 +64,7 @@
                 <h6 class="text-start text-dark fw-bold mt-4">Kulit Sensitif</h6>
                 <small class="text-dark">Kering dan gatal di beberapa area wajah. Mudah kemerahan dan kulit
                   terkelupas.</small>
+
               </a>
             </div>
           </div>
@@ -73,7 +74,7 @@
   </section>
 
 
-  <secction style="margin-bottom: 150px;">
+  <secction style="margin-bottom: 150px;" id="question-2">
     <div class="question text-center mt-5 mb-5 col-md-8 mx-auto">
       <h1 class="fw-bold">Dalam sebulan, seberapa sering kamu
         mengalami masalah jerawat?</h1>
@@ -83,22 +84,22 @@
         <div class="col-md-6">
           <div class="row d-flex justify-content-center">
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#question-3"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">
                 Tidak ada sama sekali</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#question-3"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">1
                 - 2 kali</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#question-3"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">3
                 - 4 kali</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#question-3"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Selalu
                 ada jerawat</a>
             </div>
@@ -110,7 +111,7 @@
   </secction>
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-3">
     <div class="question text-center mt-5 mb-3 col-md-8 mx-auto">
       <h1 class="fw-bold">Tipe jerawat apa yang biasanya muncul pada kulitmu?</h1>
     </div>
@@ -119,7 +120,7 @@
         <div class="col-md-8">
           <div class="row d-flex justify-content-between">
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-4" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/komedo.png" alt="" width="100%">
@@ -130,7 +131,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-4" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/postula.png" alt="" width="100%">
@@ -143,7 +144,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-4" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/nadula.png" alt="" width="100%">
@@ -155,7 +156,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-4" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/kistik.png" alt="" width="100%">
@@ -173,7 +174,7 @@
   </section>
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-4">
     <div class="question text-center mt-5 mb-5">
       <h1 class="fw-bold">Jerawat kamu sering muncul di bagian wajah mana?</h1>
       <p>Pilih semua yang kamu alami</p>
@@ -183,26 +184,26 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-center">
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-5"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Pipi
                 dan bagian atas pipi</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-5"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Dagu
                 atau bagian bawah pipi</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-5"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Hidung
                 atau bagian atas bibir</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-5"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Dahi</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-5"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Di
                 semua titik :(</a>
             </div>
@@ -214,7 +215,7 @@
 
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-5">
     <div class="question text-center mt-5 mb-3 col-md-10 mx-auto">
       <h1 class="fw-bold">Dalam 4 minggu terakhir, apakah kamu mengalami kondisi kulit yang ada di bawah ini?</h1>
       <p>Pilih semua yang kamu alami</p>
@@ -224,7 +225,7 @@
         <div class="col-md-8">
           <div class="row d-flex justify-content-between">
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-6" class="d-blok text-decoration-none">
                 <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body">
                     <img src="/mov-assets/img-1.png" alt="" class="rounded-5 shadow" width="100%">
@@ -233,7 +234,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-6" class="d-blok text-decoration-none">
                 <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body">
                     <img src="/mov-assets/img-2.png" alt="" class="rounded-5 shadow" width="100%">
@@ -242,7 +243,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-6" class="d-blok text-decoration-none">
                 <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body">
                     <img src="/mov-assets/img-3.png" alt="" class="rounded-5 shadow" width="100%">
@@ -251,7 +252,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-6" class="d-blok text-decoration-none">
                 <div class="card bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body">
                     <img src="/mov-assets/img-4.png" alt="" class="rounded-5 shadow" width="100%">
@@ -267,7 +268,7 @@
 
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-6">
     <div class="question text-center mt-5 mb-5">
       <h1 class="fw-bold">Apakah kamu pernah mengalami reaksi alergi terhadap bahan skincare di bawah ini?</h1>
       <p>Pilih semua yang kamu alami</p>
@@ -277,32 +278,32 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-center">
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-7"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Ekstrak
                 rosmarin</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-7"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Minyak
                 kacang-kacangan</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-7"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Ekstrak
                 kacang kedelai</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-7"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Aku
                 punya alergi sebelumnya, tetapi kurang yakin apa penyebabnya</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-7"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Tidak
                 ada alergi sejauh ini</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#question-7"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Lainnya</a>
             </div>
           </div>
@@ -312,7 +313,7 @@
   </section>
 
 
-  <section style="margin-bottom: 100px;">
+  <section style="margin-bottom: 100px;" id="question-7">
     <div class="question text-center mt-5 mb-5">
       <h1 class="fw-bold">Seperti apa kondisi kulit yang kamu inginkan?</h1>
     </div>
@@ -321,22 +322,22 @@
         <div class="col-md-6">
           <div class="row d-flex justify-content-center">
             <div class="col-md-6 mb-4">
-              <a href="#" type="submit"
+              <a href="#" wire:click.prevent type="submit"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">
                 Tidak ada sama sekali</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#" type="submit"
+              <a href="#" wire:click.prevent type="submit"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">
                 1 - 2 kali</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#" type="submit"
+              <a href="#" wire:click.prevent type="submit"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">3-4
                 kali</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#" type="submit"
+              <a href="#" wire:click.prevent type="submit"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Selalu
                 ada jerawat</a>
             </div>

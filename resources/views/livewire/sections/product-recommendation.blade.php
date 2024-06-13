@@ -7,11 +7,16 @@
       </div>
 
       <div class="d-flex justify-content-center mt-5">
-        <a href="" class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Berminyak</a>|
-        <a href="" class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold active">Normal</a>|
-        <a href="" class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Kering</a>|
-        <a href="" class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Kombinasi</a>|
-        <a href="" class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Sensitif</a>
+        <a href="/product" wire:navigate
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Berminyak</a>|
+        <a href="/product" wire:navigate
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold active">Normal</a>|
+        <a href="/product" wire:navigate
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Kering</a>|
+        <a href="/product" wire:navigate
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Kombinasi</a>|
+        <a href="/product" wire:navigate
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Sensitif</a>
       </div>
     </div>
   </div>
@@ -21,7 +26,7 @@
       @foreach ($products as $product)
         <div class="col-md-3">
           <a href="/product/{{ $product->slug }}" wire:navigate class="text-decoration-none d-block">
-            <div class="card rounded-4 overflow-hidden position-relative ">
+            <div class="card rounded-4 overflow-hidden position-relative product-card">
               <div style="200px" class="overflow-hidden">
                 <img src="{{ asset($product->image) }}" class="card-img-top h-100" alt="Product 1">
               </div>
@@ -52,10 +57,10 @@
 
                 <div class="mt-4">
                   <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
-                    class="text-decoration-none py-2 mb-2 text-dark cream-bg text-center d-block rounded-2 fw-bold">
+                    class="btn-add text-decoration-none py-2 mb-2 text-dark cream-bg text-center d-block rounded-2 fw-bold">
                     + Keranjang</a>
                   <a href="#" wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})'
-                    class="text-decoration-none cream-border py-2 mb-3 cream-color text-center d-block rounded-2 fw-bold">
+                    class="btn-buy text-decoration-none cream-border py-2 mb-3 cream-color text-center d-block rounded-2 fw-bold">
                     Beli Sekarang</a>
                 </div>
 

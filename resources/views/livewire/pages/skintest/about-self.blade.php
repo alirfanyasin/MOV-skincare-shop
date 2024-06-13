@@ -9,19 +9,19 @@
         <div class="col-md-6">
           <div class="row d-flex justify-content-center">
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#gender-question"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">10
                 - 18
                 Tahun</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#gender-question"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">19
                 - 25
                 Tahun</a>
             </div>
             <div class="col-md-6 mb-4">
-              <a href="#"
+              <a href="#gender-question"
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">26
                 - 45
                 Tahun</a>
@@ -32,7 +32,8 @@
       </div>
     </form>
   </section>
-  <section>
+
+  <section id="gender-question">
     <div class="question text-center mt-5 mb-3">
       <h1 class="fw-bold">Apa jenis kelaminmu?</h1>
     </div>
@@ -41,7 +42,7 @@
         <div class="col-md-4">
           <div class="row">
             <div class="col-6">
-              <a href="#" class="d-blok white-bg text-decoration-none">
+              <a href="#" wire:click.prevent class="d-blok white-bg text-decoration-none">
                 <div class="card rounded-4 overflow-hidden border-0">
                   <div class="card-body">
                     <img src="/mov-assets/wanita.png" alt="" width="100%">
@@ -51,7 +52,7 @@
               </a>
             </div>
             <div class="col-6">
-              <a href="#" class="d-blok white-bg text-decoration-none">
+              <a href="#" wire:click.prevent class="d-blok white-bg text-decoration-none">
                 <div class="card rounded-4 overflow-hidden border-0">
                   <div class="card-body">
                     <img src="/mov-assets/pria.png" alt="" width="100%">

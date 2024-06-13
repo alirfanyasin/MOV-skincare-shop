@@ -16,7 +16,7 @@
           <header>
             <h2 class="text-uppercase fw-light"><sub><img src="/mov-assets/shape/star.png" alt=""
                   width="30px"></sub>Product
-              Terbaru <sup><img src="/mov-assets/shape/star.png" alt=""></sup></h2>
+              Terbaru <sup><img src="/mov-assets/shape/star.png" alt="" width="50px"></sup></h2>
           </header>
         </div>
 

@@ -22,7 +22,6 @@
   <title>MOV - {{ $title ?? env('APP_NAME') }}</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
   {{-- JQuery --}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- Favicon -->
@@ -37,7 +36,7 @@
   {{-- Vite --}}
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-  {{-- <link rel="stylesheet" href="/build/assets/app-DcDHF_vU.css"> --}}
+  {{-- <link rel="stylesheet" href="/build/assets/app-DtG8GlKQ.css"> --}}
 </head>
 
 <body>
@@ -50,6 +49,8 @@
 
   @livewire('components.footer')
 
+
+
   {{-- <script src="/build/assets/app-DkDdL2UM.js"></script> --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -60,6 +61,14 @@
 
   <script>
     $(document).ready(function() {
+
+      if (!localStorage.getItem('modalShown')) {
+        setTimeout(() => {
+          $('#iklan').modal('show');
+          localStorage.setItem('modalShown', 'true');
+        }, 5000);
+      }
+
       $('.autoplay-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -69,6 +78,7 @@
       });
     });
   </script>
+
 </body>
 
 </html>

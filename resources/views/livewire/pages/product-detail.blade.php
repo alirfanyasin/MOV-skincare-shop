@@ -32,12 +32,14 @@
         <p class="text-secondary my-3">Tersisah {{ $product->stock }} produk</p>
       </div>
       <div class="mt-5">
-        <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
-          class="text-decoration-none py-3 me-2 px-5 text-dark cream-bg text-center rounded-2 fw-bold">
+        <a href="{{ Auth::check() ? '#' : 'login' }}"
+          @auth wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})' @endauth
+          class="btn-add text-decoration-none py-3 me-2 px-5 text-dark cream-bg text-center rounded-2 fw-bold">
           + Keranjang</a>
 
-        <a href="#" wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})'
-          class="text-decoration-none cream-border py-3 px-5 mb-3 cream-color text-center rounded-2 fw-bold">
+        <a href="{{ Auth::check() ? '#' : 'login' }}"
+          @auth wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})' @endauth
+          class="btn-buy text-decoration-none cream-border py-3 px-5 mb-3 cream-color text-center rounded-2 fw-bold">
           Beli Sekarang</a>
       </div>
     </div>

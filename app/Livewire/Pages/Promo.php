@@ -9,17 +9,16 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class ProductDetail extends Component
+class Promo extends Component
 {
-    #[Title('Detail Product')]
+    #[Title('Promo Products')]
     #[Layout('layouts.product-layout')]
 
-    public $product;
-
-    public function mount($slug)
+    public function mount()
     {
-        $this->product = Product::where('slug', $slug)->first();
+        session()->forget('skinType');
     }
+
 
     public function add_to_cart($product_id, $price)
     {
@@ -33,6 +32,7 @@ class ProductDetail extends Component
         $this->dispatch('cart_count', $cartCount);
     }
 
+
     public function buy_now($product_id, $price)
     {
         Cart::create([
@@ -40,14 +40,13 @@ class ProductDetail extends Component
             'product_id' => $product_id,
             'price' => $price,
         ]);
-
-        return redirect('cart');
+        $this->redirect('cart');
     }
 
     public function render()
     {
-        return view('livewire.pages.product-detail', [
-            'product' => $this->product
+        return view('livewire.pages.promo', [
+            'products' => Product::orderBy('id', 'DESC')->get()
         ]);
     }
 }

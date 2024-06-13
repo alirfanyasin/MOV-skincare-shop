@@ -9,7 +9,7 @@
         <div class="col-md-6">
           <div class="row d-flex justify-content-between">
             <div class="col-md-4">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-8" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/img-finger-1.png" class="shadow" alt="" width="100%">
@@ -19,7 +19,7 @@
               </a>
             </div>
             <div class="col-md-4">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-8" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/img-finger-2.png" class="shadow" alt="" width="100%">
@@ -29,7 +29,7 @@
               </a>
             </div>
             <div class="col-md-4">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-8" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/img-finger-3.png" class="shadow" alt="" width="100%">
@@ -47,7 +47,7 @@
 
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-8">
     <div class="question text-center mt-5 mb-3 col-md-10 mx-auto">
       <h1 class="fw-bold">Dalam 3 bulan terakhir, apakah kamu menggunakan produk atau krim dari dokter?</h1>
     </div>
@@ -56,7 +56,7 @@
         <div class="col-md-6">
           <div class="row d-flex justify-content-between">
             <div class="col-md-4">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-9" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/img-finger-1.png" class="shadow" alt="" width="100%">
@@ -66,7 +66,7 @@
               </a>
             </div>
             <div class="col-md-4">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-9" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/img-finger-2.png" class="shadow" alt="" width="100%">
@@ -76,7 +76,7 @@
               </a>
             </div>
             <div class="col-md-4">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-9" class="d-blok text-decoration-none">
                 <div class="card p-0 bg-transparent rounded-4 overflow-hidden border-0">
                   <div class="card-body p-0">
                     <img src="/mov-assets/img-finger-3.png" class="shadow" alt="" width="100%">
@@ -92,7 +92,7 @@
   </section>
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-9">
     <div class="question text-center mt-5 mb-5">
       <h1 class="fw-bold">Dalam sebulan terakhir, seberapa lama kira-kira kamu berada di luar dan terpapar sinar
         matahari
@@ -103,7 +103,7 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-between">
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-10" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/time-1.png" alt="" width="100%">
@@ -113,7 +113,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-10" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/time-1.png" alt="" width="100%">
@@ -123,7 +123,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-10" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/time-1.png" alt="" width="100%">
@@ -133,7 +133,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-10" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/time-1.png" alt="" width="100%">
@@ -143,7 +143,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-10" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/time-1.png" alt="" width="100%">
@@ -160,7 +160,7 @@
   </section>
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-10">
     <div class="question text-center mt-5 mb-5">
       <h1 class="fw-bold">Akhir-akhir ini, kamu biasa tidur di jam berapa?</h1>
     </div>
@@ -169,7 +169,7 @@
         <div class="col-md-6">
           <div class="row d-flex justify-content-between">
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-11" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/img-month-1.png" alt="" width="100%">
@@ -179,7 +179,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-11" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/img-month-2.png" alt="" width="100%">
@@ -189,7 +189,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-11" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/img-month-3.png" alt="" width="100%">
@@ -199,7 +199,7 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-11" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0">
                   <div class="card-body p-4">
                     <img src="/mov-assets/img-month-4.png" alt="" width="100%">
@@ -215,7 +215,7 @@
   </section>
 
 
-  <section style="margin-bottom: 150px;">
+  <section style="margin-bottom: 150px;" id="question-11">
     <div class="question text-center mt-5 mb-5">
       <h1 class="fw-bold">Biasanya kamu naik apa kalau berpergian?</h1>
     </div>
@@ -224,7 +224,7 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-between">
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-12" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0" style="height: 157px;">
                   <div class="card-body p-4">
                     <img src="/mov-assets/go-1.png" alt="" width="100%">
@@ -234,7 +234,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-12" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0" style="height: 157px;">
                   <div class="card-body p-4">
                     <img src="/mov-assets/go-2.png" alt="" width="100%">
@@ -244,7 +244,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-12" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0" style="height: 157px;">
                   <div class="card-body p-4">
                     <img src="/mov-assets/go-3.png" alt="" width="100%">
@@ -254,7 +254,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-12" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0" style="height: 157px;">
                   <div class="card-body p-4">
                     <img src="/mov-assets/go-4.png" alt="" width="100%">
@@ -264,7 +264,7 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#" class="d-blok text-decoration-none">
+              <a href="#question-12" class="d-blok text-decoration-none">
                 <div class="card dark-cream-bg rounded-4 overflow-hidden border-0" style="height: 157px;">
                   <div class="card-body p-4">
                     <img src="/mov-assets/go-5.png" alt="" width="100%">
@@ -290,7 +290,7 @@
   </section>
 
 
-  <section style="margin-bottom: 100px;">
+  <section style="margin-bottom: 100px;" id="question-12">
     <div class="question text-center mt-5">
       <h1 class="fw-bold">Terakhir, apakah kamu punya diet khusus?</h1>
     </div>
@@ -303,33 +303,33 @@
         <div class="col-md-10">
           <div class="row d-flex justify-content-center">
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Vegetarian</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Vegen</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Ketotarian</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Bebas
                 susu</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Bebas
                 kluten</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Pescatarian</a>
             </div>
             <div class="col-md-4 mb-4">
-              <a href="#"
+              <a href="#" wire:click.prevent
                 class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Aku
                 tidak punya diet khusus</a>
             </div>
