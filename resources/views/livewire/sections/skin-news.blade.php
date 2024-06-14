@@ -6,7 +6,7 @@
     </header>
 
     <p class="fs-5">
-      Marshalova, ada begitu banyak ingredients yang digunakan dalam produk skincare, salah satunya adalah
+      Bestie, ada begitu banyak ingredients yang digunakan dalam produk skincare, salah satunya adalah
       tranexamic acid. Sama seperti bahan aktif bersifat asam lainnya, tranexamic acid tidak boleh dicampur dengan
       beberapa ingredients lain untuk mencegah terjadinya reaksi berbahaya pada kulit seperti iritasi.
     </p>
@@ -62,4 +62,10 @@
       setelahnya.
     </p>
   </div>
+
+  <style>
+    p {
+      text-align: justify
+    }
+  </style>
 </div>

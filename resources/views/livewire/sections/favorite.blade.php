@@ -45,10 +45,12 @@
                 <del class="text-secondary">Rp. 90.000</del>
 
                 <div class="mt-4">
-                  <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
+                  <a href="{{ Auth::check() ? '#' : 'login' }}"
+                    @auth wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})' @endauth
                     class="btn-add text-decoration-none py-2 mb-2 text-dark cream-bg text-center d-block rounded-2 fw-bold">
                     + Keranjang</a>
-                  <a href="#" wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})'
+                  <a href="{{ Auth::check() ? '#' : 'login' }}"
+                    @auth wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})' @endauth
                     class="btn-buy text-decoration-none cream-border py-2 mb-3 cream-color text-center d-block rounded-2 fw-bold">
                     Beli Sekarang</a>
                 </div>
