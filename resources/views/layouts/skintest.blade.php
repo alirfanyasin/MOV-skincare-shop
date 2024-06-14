@@ -31,7 +31,7 @@
 
   {{-- Vite --}}
   @vite(['resources/css/app.css', 'resources/js/app.js'])
-  <link rel="stylesheet" href="/build/assets/app-DtG8GlKQ.css">
+  {{-- <link rel="stylesheet" href="/build/assets/app-CBZfqUgJ.css"> --}}
 </head>
 
 <body>

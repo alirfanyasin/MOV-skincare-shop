@@ -7,19 +7,20 @@
       </div>
 
       <div class="d-flex justify-content-center mt-5">
-        <a href="/product" wire:navigate
-          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Berminyak</a>|
-        <a href="/product" wire:navigate
-          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold active">Normal</a>|
-        <a href="/product" wire:navigate
-          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Kering</a>|
-        <a href="/product" wire:navigate
-          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Kombinasi</a>|
-        <a href="/product" wire:navigate
-          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold">Sensitif</a>
+        <a href="#" wire:click.prevent='active_tab("berminyak")'
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold {{ $tab == 'berminyak' ? 'active' : '' }}">Berminyak</a>|
+        <a href="#" wire:click.prevent='active_tab("normal")'
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold {{ $tab == 'normal' ? 'active' : '' }}">Normal</a>|
+        <a href="#" wire:click.prevent='active_tab("kering")'
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold {{ $tab == 'kering' ? 'active' : '' }}">Kering</a>|
+        <a href="#" wire:click.prevent='active_tab("kombinasi")'
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold {{ $tab == 'kombinasi' ? 'active' : '' }}">Kombinasi</a>|
+        <a href="#" wire:click.prevent='active_tab("sensitif")'
+          class="text-decoration-none fs-5 text-uppercase mx-3 green-color fw-bold {{ $tab == 'sensitif' ? 'active' : '' }}">Sensitif</a>
       </div>
     </div>
   </div>
+
 
   <div class="container mt-5">
     <div class="row d-lg-flex justify-content-evenly">
@@ -56,10 +57,12 @@
                 <del class="text-secondary">Rp. 90.000</del>
 
                 <div class="mt-4">
-                  <a href="#" wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})'
+                  <a href="{{ Auth::check() ? '#' : 'login' }}"
+                    @auth wire:click.prevent='add_to_cart({{ $product->id }}, {{ $product->price }})' @endauth
                     class="btn-add text-decoration-none py-2 mb-2 text-dark cream-bg text-center d-block rounded-2 fw-bold">
                     + Keranjang</a>
-                  <a href="#" wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})'
+                  <a href="{{ Auth::check() ? '#' : 'login' }}"
+                    @auth wire:click.prevent='buy_now({{ $product->id }}, {{ $product->price }})' @endauth
                     class="btn-buy text-decoration-none cream-border py-2 mb-3 cream-color text-center d-block rounded-2 fw-bold">
                     Beli Sekarang</a>
                 </div>

@@ -137,4 +137,9 @@
       </div>
     </div>
   </div>
+  <style>
+    p {
+      text-align: justify
+    }
+  </style>
 </div>
