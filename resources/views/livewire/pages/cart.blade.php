@@ -169,7 +169,7 @@
     <div class="row">
       <div class="col d-flex justify-content-end">
         <button id="pay-button" class="dark-cream-bg text-white border-0 fw-bold px-3 py-2 rounded-2"
-          data-bs-toggle="modal" data-bs-target="#orderSuccessModal">Buat
+          data-bs-toggle="modal" data-bs-target="#exampleModal">Buat
           Pesanan</button>
       </div>
     </div>
@@ -177,13 +177,17 @@
 
   {{-- wire:click.prevent='delete_cart({{ Auth::user()->id }})' --}}
 
-  <!-- Alert -->
-  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-body p-0">
+        <div class="modal-body p-0 position-relative">
           <img src="/mov-assets/success.png" alt="" class="w-100">
+          <div class="position-absolute" style="bottom: 30px; left: 25%;">
+            <a href="https://wa.me/+6287863299291" target="_blank">
+              <img src="/mov-assets/btn-wa.png" alt="" class="" style="width: 250px;">
+            </a>
+          </div>
         </div>
       </div>
     </div>

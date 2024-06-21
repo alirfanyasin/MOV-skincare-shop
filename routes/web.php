@@ -9,10 +9,12 @@ use App\Livewire\Auth\Success;
 use App\Livewire\Pages\AboutUs;
 use App\Livewire\Pages\Cart;
 use App\Livewire\Pages\Index;
+use App\Livewire\Pages\MyOrder;
 use App\Livewire\Pages\ProductCategory;
 use App\Livewire\Pages\ProductDetail;
 use App\Livewire\Pages\Products;
 use App\Livewire\Pages\ProductSkinType;
+use App\Livewire\Pages\Profile;
 use App\Livewire\Pages\Promo;
 use App\Livewire\Pages\SkinNews;
 use App\Livewire\Pages\Skintest\AboutSelf;
@@ -87,4 +89,6 @@ Route::middleware(['auth'])->group(function () {
 
   Route::get('/cart', Cart::class);
   Route::get('/about-us', AboutUs::class);
+  Route::get('/my-profile', Profile::class);
+  Route::get('/my-order', MyOrder::class);
 });

@@ -12,7 +12,7 @@
       <div class="col-md-3">
         <div class="card overflow-hidden rounded-4 border-0 blog">
           <div class="overflow-hidden">
-            <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
+            <img src="/mov-assets/product/product-6.png" class="card-img-top" alt="..." width="100%">
           </div>
           <div class="card-body">
             <p class="card-text">Tranexamic Acid Tidak Boleh Dicampur Dengan Kandungan Berikut Ini.</p>
@@ -22,7 +22,7 @@
       <div class="col-md-3">
         <div class="card overflow-hidden rounded-4 border-0 blog">
           <div class="overflow-hidden">
-            <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
+            <img src="/mov-assets/product/product-6.png" class="card-img-top" alt="..." width="100%">
           </div>
           <div class="card-body">
             <p class="card-text">5 Tips Merawat Kulit Wajah Berminyak</p>
@@ -32,7 +32,7 @@
       <div class="col-md-3">
         <div class="card overflow-hidden rounded-4 border-0 blog">
           <div class="overflow-hidden">
-            <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
+            <img src="/mov-assets/product/product-6.png" class="card-img-top" alt="..." width="100%">
           </div>
           <div class="card-body">
             <p class="card-text">Pentingnya Skincare Awareness di Usia Remaja.</p>
@@ -42,7 +42,7 @@
       <div class="col-md-3">
         <div class="card overflow-hidden rounded-4 border-0 blog">
           <div class="overflow-hidden">
-            <img src="/mov-assets/product/img-prooduct-5.png" class="card-img-top" alt="..." width="100%">
+            <img src="/mov-assets/product/product-6.png" class="card-img-top" alt="..." width="100%">
           </div>
           <div class="card-body">
             <p class="card-text">6 Manfaat Menggunakan Skincare yang Wajib Diketahui.</p>

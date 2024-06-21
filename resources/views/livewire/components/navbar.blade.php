@@ -21,7 +21,7 @@
             Test</button>
         </a>
 
-        <a class="nav-link  position-relative mx-2" href="/cart" wire:navigate>
+        <a class="nav-link  position-relative mx-2" href="/cart">
           <iconify-icon icon="bx:cart" class="fs-3"></iconify-icon>
           @if ($cartCount > 0)
             <span class="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-danger">
@@ -30,16 +30,10 @@
             </span>
           @endif
         </a>
-        <div class="btn-group nav-link">
-          <button type="button" class="bg-transparent profile-dropdown border-0 dropdown-toggle"
-            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+        <div class="nav-link">
+          <a wire:navigate href="/my-profile" class="bg-transparent text-dark text-decoration-none">
             <iconify-icon icon="mingcute:user-4-line" class="fs-3"></iconify-icon>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-            @auth
-              <li><a class="dropdown-item" href="/logout">Logout</a></li>
-            @endauth
-          </ul>
+          </a>
         </div>
       </div>
     </div>
