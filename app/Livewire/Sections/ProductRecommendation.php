@@ -50,12 +50,6 @@ class ProductRecommendation extends Component
         }
     }
 
-    public function recommendationProductButton($session)
-    {
-        session('skin_type_menu', $session);
-        $this->dispatch('active-menu', $session);
-        $this->redirect('product');
-    }
 
     public function add_to_cart($product_id, $price)
     {
