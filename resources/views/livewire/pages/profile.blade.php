@@ -35,6 +35,7 @@
               <h4 class="text-uppercase fw-bold">Profile Saya</h4>
               <p class="text-secondary">Kelola informasi profil Anda untuk mengontrol, melindungi dan mengamankan akun
               </p>
+              <a href="/logout">Logout</a>
             </header>
             <hr class="border-2 border-dark">
             <div class="row">
@@ -88,67 +89,30 @@
 
             <header class="d-flex align-items-center justify-content-between">
               <h4 class="text-uppercase fw-bold">Alamat Saya</h4>
-              <button class="text-white dark-cream-bg border-0 py-2 px-4 rounded-2" data-bs-toggle="modal"
-                data-bs-target="#addAddress">+ Tambah Alamat</button>
+              <a href="/address/create" wire:navigate
+                class="text-decoration-none text-white dark-cream-bg border-0 py-2 px-4 rounded-2">+
+                Tambah Alamat</a>
             </header>
             <hr class="border-2 border-dark">
-            <div class="d-flex align-items-center justify-content-between">
-              <div>
-                <span class="fw-bold">{{ auth()->user()->name }}</span> | ({{ auth()->user()->phone_number }}) <br>
-                <span>Citraland VI no 22 (Depan Setya Laundry)</span> <br>
-                <span>KOTA SURABAYA, JAWA TIMUR, 60241</span>
+            @foreach ($addresses as $address)
+              <div
+                class="d-flex align-items-center {{ $address->status == 'yes' ? 'light-cream-bg' : '' }} p-3 rounded-3 justify-content-between mb-3">
+                <div>
+                  <span class="fw-bold">{{ $address->name }}</span> | ({{ $address->phone_number }}) <br>
+                  <span>{{ $address->address }}</span> <br>
+                  <span>{{ $address->city }}, {{ $address->province }}, {{ $address->zip_code }}</span>
+                </div>
+                <div>
+                  <a href="/address/edit/{{ $address->id }}" wire:navigate
+                    class="text-decoration-none bg-transparent border-0 dark-cream-color">Ubah</a> |
+                  <button type="button" wire:click.prevent='useAddress({{ $address->id }})'
+                    class="bg-transparent border-0 dark-cream-color">Gunakan</button>
+                </div>
               </div>
-              <button class="bg-transparent border-0 dark-cream-color">Ubah</button>
-            </div>
+              <hr>
+            @endforeach
 
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="addAddress" tabindex="-1" aria-labelledby="addAddressLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Alamat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="name" class="fw-semibold">Nama Lengkap</label>
-            <input type="text" id="name" name="name" value="{{ Auth::user()->name }}"
-              class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="nomor_hp" class="fw-semibold">Nomor Telepon</label>
-            <input type="number" id="nomor_hp" name="nomor_hp" value="{{ Auth::user()->phone_number }}"
-              class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="city" class="fw-semibold">Kota</label>
-            <input type="text" id="city" name="city" class="form-control"
-              placeholder="Ex: KOTA SURABAYA">
-          </div>
-          <div class="mb-3">
-            <label for="province" class="fw-semibold">Provinsi</label>
-            <input type="text" id="province" name="province" class="form-control" placeholder="Ex: JAWA TIMUR">
-          </div>
-          <div class="mb-3">
-            <label for="zip_code" class="fw-semibold">Kode POS</label>
-            <input type="text" id="zip_code" name="zip_code" class="form-control" placeholder="Ex: 123456">
-          </div>
-          <div class="mb-3">
-            <label for="address" class="fw-semibold">Detail Alamat</label>
-            <textarea name="address" id="address" cols="30" class="form-control" rows="4"
-              placeholder="Jl. Anonym Blok Z Nomor 20, (Depan Setya Laundry)"></textarea>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn dark-cream-bg text-white">Tambah</button>
         </div>
       </div>
     </div>

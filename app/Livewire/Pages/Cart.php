@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Address;
 use App\Models\Cart as ModelsCart;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Layout;
@@ -62,6 +63,8 @@ class Cart extends Component
     //     }
     // }
 
+
+
     public function render()
     {
         session()->forget('cart_count');
@@ -73,6 +76,7 @@ class Cart extends Component
             'totalDelivery' => $this->totalDelivery,
             'total' => session('total'),
             'snap_token' => $this->snapToken,
+            'address' => Address::where('user_id', Auth::user()->id)->where('status', 'yes')->first()
         ]);
     }
 }

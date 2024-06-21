@@ -17,14 +17,14 @@
         <div class="col-md-6 ">
           <h5 class="fw-semibold">Alamat Pengiriman</h5>
           <div>
-            <p>Anggun Destiwardhani | (+62) 822-2531-4714</p>
+            <p>{{ $address->name }} | {{ $address->phone_number }}</p>
             <hr>
-            <div>Citraland VI no 22 (Depan Setya Laundry)</div>
-            <div>KOTA SURABAYA, JAWA TIMUR, 60241</div>
+            <div>{{ $address->address }}</div>
+            <div>{{ $address->city }}, {{ $address->province }}, {{ $address->zip_code }}</div>
           </div>
         </div>
         <div class="col-md-5 d-flex justify-content-end">
-          <a href="" class="text-decoration-none d-inline-block black-color">
+          <a href="/my-profile" wire:navigate class="text-decoration-none d-inline-block black-color">
             <iconify-icon icon="material-symbols-light:keyboard-arrow-right" class="fs-50"></iconify-icon>
           </a>
         </div>

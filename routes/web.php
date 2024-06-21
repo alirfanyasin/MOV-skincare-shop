@@ -7,6 +7,8 @@ use App\Livewire\Auth\Otp;
 use App\Livewire\Auth\Register;
 use App\Livewire\Auth\Success;
 use App\Livewire\Pages\AboutUs;
+use App\Livewire\Pages\AddressCreate;
+use App\Livewire\Pages\AddressEdit;
 use App\Livewire\Pages\Cart;
 use App\Livewire\Pages\Index;
 use App\Livewire\Pages\MyOrder;
@@ -91,4 +93,6 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/about-us', AboutUs::class);
   Route::get('/my-profile', Profile::class);
   Route::get('/my-order', MyOrder::class);
+  Route::get('/address/create', AddressCreate::class);
+  Route::get('/address/edit/{id}', AddressEdit::class);
 });
