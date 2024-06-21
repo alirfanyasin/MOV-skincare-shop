@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->nullable();
             $table->longText('description')->nullable();
+            $table->string('category')->nullable();
             $table->unsignedBigInteger('price');
             $table->unsignedInteger('stock');
             $table->unsignedInteger('discount')->default(0)->nullable();

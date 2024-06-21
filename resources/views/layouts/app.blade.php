@@ -62,12 +62,7 @@
   <script>
     $(document).ready(function() {
 
-      if (!localStorage.getItem('modalShown')) {
-        setTimeout(() => {
-          $('#iklan').modal('show');
-          localStorage.setItem('modalShown', 'true');
-        }, 5000);
-      }
+
 
       $('.autoplay-slider').slick({
         slidesToShow: 3,
@@ -78,6 +73,8 @@
       });
     });
   </script>
+
+
 
 </body>
 

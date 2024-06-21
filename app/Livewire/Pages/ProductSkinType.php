@@ -6,50 +6,42 @@ use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Layout;
-use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Products extends Component
+class ProductSkinType extends Component
 {
     #[Title('Products')]
     #[Layout('layouts.product-layout')]
 
-    public $products = [];
+    public $products;
 
-    public function mount()
+    public function mount($type)
     {
         session()->forget('skinType');
-        $skinTypeMenu = session('skin_type_menu', 'all');
-        $this->setProducts($skinTypeMenu);
-    }
-
-    protected $listeners = ['active-menu' => 'setProducts'];
-
-    public function setProducts($skin_type)
-    {
-        switch ($skin_type) {
-            case 'berminyak':
-                $this->products = Product::take(3)->orderBy('id', 'DESC')->get();
-                break;
+        switch ($type) {
             case 'normal':
-                $this->products = Product::take(4)->orderBy('id', 'ASC')->get();
+                $this->products = Product::all();
                 break;
             case 'kering':
-                $this->products = Product::take(6)->inRandomOrder()->get();
+                // $ids = [2, 3, 4, 1, 7];
+                $this->products = Product::all();
                 break;
-            case 'kombinasi':
-                $this->products = Product::take(2)->orderBy('id', 'ASC')->get();
-                break;
-            case 'sensitif':
-                $this->products = Product::take(5)->orderBy('id', 'DESC')->get();
+            case 'berminyak':
+                $ids = [2, 3, 4, 1, 7];
+                $this->products = Product::whereIn('id', $ids)->get();
                 break;
             case 'berjerawat':
-                $this->products = Product::take(1)->orderBy('id', 'ASC')->get();
+                $ids = [3, 4, 8, 7];
+                $this->products = Product::whereIn('id', $ids)->get();
                 break;
+            case 'sensitif':
+                $ids = [1, 4, 2, 3, 7, 8];
+                $this->products = Product::whereIn('id', $ids)->get();
+                break;
+
             default:
-                // Load all products
-                $this->products = Product::orderBy('id', 'ASC')->get();
+                # code...
                 break;
         }
     }
@@ -75,13 +67,13 @@ class Products extends Component
             'product_id' => $product_id,
             'price' => $price,
         ]);
-        $this->redirect('cart');
+        $this->redirect('/cart');
     }
 
 
     public function render()
     {
-        return view('livewire.pages.products', [
+        return view('livewire.pages.product-skin-type', [
             'products' => $this->products
         ]);
     }

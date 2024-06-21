@@ -9,8 +9,10 @@ use App\Livewire\Auth\Success;
 use App\Livewire\Pages\AboutUs;
 use App\Livewire\Pages\Cart;
 use App\Livewire\Pages\Index;
+use App\Livewire\Pages\ProductCategory;
 use App\Livewire\Pages\ProductDetail;
 use App\Livewire\Pages\Products;
+use App\Livewire\Pages\ProductSkinType;
 use App\Livewire\Pages\Promo;
 use App\Livewire\Pages\SkinNews;
 use App\Livewire\Pages\Skintest\AboutSelf;
@@ -50,6 +52,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Index::class);
 Route::get('/product', Products::class);
+Route::get('/product/category/{category}', ProductCategory::class);
+Route::get('/product/skin-type/{type}', ProductSkinType::class);
 Route::get('/product/{slug}', ProductDetail::class);
 Route::get('/promo', Promo::class);
 
