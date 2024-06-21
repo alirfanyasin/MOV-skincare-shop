@@ -2,21 +2,27 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Cart;
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Index extends Component
+class ProductCategory extends Component
 {
-    #[Title('Landing Page')]
-    #[Layout('layouts.app')]
+    #[Title('Products')]
+    #[Layout('layouts.product-layout')]
 
-    public function mount()
+    public $products;
+
+    public function mount($category)
     {
         session()->forget('skinType');
-        session()->forget('skin_type_menu');
+        $this->products = Product::where('category', $category)->get();
     }
+
+
     public function add_to_cart($product_id, $price)
     {
         Cart::create([
@@ -37,11 +43,13 @@ class Index extends Component
             'product_id' => $product_id,
             'price' => $price,
         ]);
-        $this->redirect('cart');
+        $this->redirect('/cart');
     }
 
     public function render()
     {
-        return view('livewire.pages.index');
+        return view('livewire.pages.product-category', [
+            'products' => $this->products
+        ]);
     }
 }

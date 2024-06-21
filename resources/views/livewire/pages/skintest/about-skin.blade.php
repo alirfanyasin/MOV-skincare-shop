@@ -319,27 +319,32 @@
     </div>
     <form>
       <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-10">
           <div class="row d-flex justify-content-center">
-            <div class="col-md-6 mb-4">
-              <a href="#" wire:click.prevent type="submit"
-                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">
-                Tidak ada sama sekali</a>
+            <div class="col-md-4 mb-4">
+              <a href="#" wire:click.prevent
+                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Meningkatkan
+                kelembapan kulit</a>
             </div>
-            <div class="col-md-6 mb-4">
-              <a href="#" wire:click.prevent type="submit"
-                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">
-                1 - 2 kali</a>
+            <div class="col-md-4 mb-4">
+              <a href="#" wire:click.prevent
+                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Warna
+                kulit merata</a>
             </div>
-            <div class="col-md-6 mb-4">
-              <a href="#" wire:click.prevent type="submit"
-                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">3-4
-                kali</a>
+            <div class="col-md-4 mb-4">
+              <a href="#" wire:click.prevent
+                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Bersih
+                dari jerawat</a>
             </div>
-            <div class="col-md-6 mb-4">
-              <a href="#" wire:click.prevent type="submit"
-                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Selalu
-                ada jerawat</a>
+            <div class="col-md-4 mb-4">
+              <a href="#" wire:click.prevent
+                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Menangkal
+                tanda-tanda penuaan</a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="#" wire:click.prevent
+                class="text-decoration-none d-inline-block text-center dark-cream-bg text-white border-2 w-100 py-4 rounded-2">Memperbaiki
+                pori-pori</a>
             </div>
           </div>
         </div>

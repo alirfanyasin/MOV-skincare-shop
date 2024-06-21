@@ -84,6 +84,24 @@
     </div>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modalShownData = localStorage.getItem('modalShown');
+      const now = new Date().getTime();
+      const twoHours = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 
+      if (!modalShownData || (now - JSON.parse(modalShownData).timestamp > twoHours)) {
+        setTimeout(function() {
+          var modalElement = document.getElementById('iklan');
+          var modal = new bootstrap.Modal(modalElement);
+          modal.show();
+          localStorage.setItem('modalShown', JSON.stringify({
+            shown: true,
+            timestamp: now
+          }));
+        }, 3000);
+      }
+    });
+  </script>
 
 </div>

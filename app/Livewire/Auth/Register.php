@@ -51,7 +51,7 @@ class Register extends Component
             'phone_number' => $this->phone_number
         ]);
 
-        $this->redirect('login');
+        $this->redirect('otp');
     }
 
     public function render()

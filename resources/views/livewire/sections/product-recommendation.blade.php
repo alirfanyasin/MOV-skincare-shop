@@ -78,7 +78,7 @@
     </div>
 
     <div class="d-flex justify-content-center">
-      <a href="/product" wire:navigate
+      <a href="#" wire:click.prevent='recommendationProductButton("{{ session('skin_type_tab') }}")'
         class="text-decoration-none text-white dark-cream-bg py-2 px-5 d-inline-block mt-5 rounded-pill fw-semibold">Rekomendasi
         Lainnya</a>
     </div>
