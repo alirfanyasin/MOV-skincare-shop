@@ -137,6 +137,24 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <hr>
+
+    <h2 class="dark-cream-color fw-semibold">Berita Lainnya</h2>
+
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/mov-assets/another-news.png" class="w-100" alt="">
+      </div>
+      <div class="col-md-4">
+        <img src="/mov-assets/another-news.png" class="w-100" alt="">
+      </div>
+      <div class="col-md-4">
+        <img src="/mov-assets/another-news.png" class="w-100" alt="">
+      </div>
+    </div>
+  </div>
   <style>
     p {
       text-align: justify
