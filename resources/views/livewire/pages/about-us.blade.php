@@ -1,6 +1,7 @@
-<div class="light-cream-bg" style="padding-top: 150px">
-  <section id="about-us-section" class="container pb-5">
-    <div class="row">
+<div class="light-cream-bg" style="padding-top: 50px">
+  <section id="about-us-section" class="">
+    <img src="/mov-assets/img-tentang-kami.png" alt="" class="w-100">
+    {{-- <div class="row">
       <div class="col-md-8 mx-auto">
         <header class="text-center mb-5">
           <h1 class="text-uppercase green-color fw-bold">Tentang Kami</h1>
@@ -12,7 +13,7 @@
           tubuh dengan rangkaian produk perawatan tubuh.
         </p>
       </div>
-    </div>
+    </div> --}}
   </section>
 
   @livewire('sections.skin-type-banner')

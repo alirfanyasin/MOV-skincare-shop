@@ -4,6 +4,7 @@ namespace App\Livewire\Pages;
 
 use App\Models\Address;
 use App\Models\Cart as ModelsCart;
+use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -62,6 +63,22 @@ class Cart extends Component
     //         $item->delete();
     //     }
     // }
+
+    public function order()
+    {
+        $code_trx = Str::random(10);
+        $dataCart = ModelsCart::where('user_id', Auth::user()->id)->get();
+        foreach ($dataCart as $dc) {
+            Order::create([
+                'user_id' => $dc->user_id,
+                'product_id' => $dc->product_id,
+                'price' => $dc->price,
+                'quantity' => $dc->quantity,
+                'code_trx' => $code_trx,
+            ]);
+        }
+        $this->dispatch('orderPlaced');
+    }
 
 
 

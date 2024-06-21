@@ -19,4 +19,14 @@ class Product extends Model
     {
         return $this->hasMany(Cart::class, 'product_id');
     }
+
+    /**
+     * Get all of the order for the Product
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function order(): HasMany
+    {
+        return $this->hasMany(Order::class, 'product_id');
+    }
 }

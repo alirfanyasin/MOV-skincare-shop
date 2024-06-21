@@ -192,4 +192,15 @@
       </div>
     </div>
   </div>
+  {{-- 
+  <script>
+    document.addEventListener('livewire:load', function() {
+      Livewire.on('orderPlaced', function() {
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+          keyboard: false
+        });
+        myModal.show();
+      });
+    });
+  </script> --}}
 </div>
